@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NewsML Version="1.2">
+        <Catalog Href="http://www.afp.com/dtd/AFPCatalog.xml"/>
+  <NewsEnvelope>
+        <DateAndTime>20130228T224908Z</DateAndTime>
+        <Priority FormalName="4"/>
+      </NewsEnvelope>
+  <NewsItem>
+    <Identification>
+      <NewsIdentifier>
+	        	                <ProviderId>afp.com</ProviderId>
+	                <DateId>20130228</DateId>
+                <NewsItemId>CNG.b11adae2eeb50f9b7a0f99523a9b4e15.751</NewsItemId>
+        			        <RevisionId PreviousRevision="3" Update="N">4</RevisionId>
+                <PublicIdentifier>urn:newsml:afp.com:20130228:CNG.b11adae2eeb50f9b7a0f99523a9b4e15.751:4</PublicIdentifier>
+      </NewsIdentifier>
+                              <NameLabel>Haití-política-DDHH-corrupción-justicia-juicio-Duvalier</NameLabel>
+          </Identification>
+    <NewsManagement>
+      <NewsItemType FormalName="News"/>
+            <FirstCreated>20130228T164758Z</FirstCreated>
+            <ThisRevisionCreated>20130228T224905Z</ThisRevisionCreated>
+                        <Status FormalName="Usable"/>
+                </NewsManagement>
+    <NewsComponent>
+      <NewsLines>
+        <HeadLine>Haití: exdictador Duvalier se presenta finalmente ante justicia</HeadLine>
+                                                                                          <DateLine>PUERTO PRÏNCIPE (AFP)</DateLine>
+                <CopyrightLine>© 2013 AFP</CopyrightLine>
+        <SlugLine>Haití-política-DDHH-corrupción-justicia-juicio-Duvalier</SlugLine>
+              </NewsLines>
+      <AdministrativeMetadata>
+        <Provider>
+	  <Party FormalName="afp.com" />
+        </Provider>
+                              </AdministrativeMetadata>
+      <DescriptiveMetadata>
+	<Language FormalName="es" />
+                <OfInterestTo FormalName="espanol--periodico--latinoamericaya"/>
+                                <Location HowPresent="Origin">
+                    <Property FormalName="Country" Value="HTI"/>
+                              <Property FormalName="City" Value="Puerto Príncipe"/>
+                              <Property FormalName="Latitude" Value="18.53917"/>
+                              <Property FormalName="Longitude" Value="-72.335"/>
+                  </Location>
+                                                <Property FormalName="TaggingSensitive" Value="StrongLanguage"/>
+                                                        <SubjectCode>
+                                    <Subject FormalName="11000000"/>
+                                          </SubjectCode>
+                <SubjectCode>
+                                            <SubjectMatter FormalName="02007000"/>
+                                  </SubjectCode>
+                <SubjectCode>
+                                            <SubjectMatter FormalName="11007000"/>
+                                  </SubjectCode>
+                <SubjectCode>
+                                            <SubjectMatter FormalName="02007000"/>
+                                  </SubjectCode>
+                <SubjectCode>
+                                            <SubjectMatter FormalName="02008000"/>
+                                  </SubjectCode>
+                <SubjectCode>
+                                                    <SubjectDetail FormalName="02012006"/>
+                          </SubjectCode>
+                <SubjectCode>
+                                    <Subject FormalName="11000000"/>
+                                          </SubjectCode>
+                <SubjectCode>
+                                            <SubjectMatter FormalName="11007000"/>
+                                  </SubjectCode>
+                <SubjectCode>
+                                    <Subject FormalName="02000000"/>
+                                          </SubjectCode>
+                <SubjectCode>
+                                            <SubjectMatter FormalName="02001000"/>
+                                  </SubjectCode>
+                      </DescriptiveMetadata>
+                                                                                                                                <NewsComponent>
+        <ContentItem>
+          <MediaType FormalName="Text"/>
+          <Format FormalName="bcNITF2.5"/>
+          <DataContent><media media-type="image" style="leftSide"><media-reference data-location="#photo0" mime-type=""/></media><p> El exdictador de Haití Jean-Claude Duvalier, objeto de varias demandas de opositores y que en tres oportunidades se había negado a comparecer ante la justicia, se presentó este jueves a un Tribunal de Apelaciones de Puerto Príncipe, constató un periodista de la AFP.</p><p>Vistiendo traje oscuro y camisa blanca, Jean-Claude Duvalier se acomodó en la sala del tribunal junto a su compañera Veronique Roy y en la sesión expresó total convencimiento de sus acciones de gobierno.</p><p>Las respuestas del exdictador, inaudibles, fueron repetidas por un actuario, y provocaron aplausos de sus partidarios presentes en sala y rechazo de víctimas y familiares de su gobierno a las que enfrentaba por primera vez.</p><p>Cuando el juez Jean-Joseph Lebrun le preguntó si asumía la responsabilidad por sus años de mano dura en el poder desde 1971 a 1986, Duvalier respondió afirmativamente.</p><p>"Creo que hice todo lo posible para garantizar una vida digna para mi país", dijo "Baby Doc" Duvalier.</p><p>Fuera del edificio, varias decenas de personas vestían prendas con los colores rojo y negro que usaba el antiguo régimen, como gesto de simpatía con el exdictador, y gritaban "Viva Duvalier".</p><p>La sala de la audiencia estaba repleta, principalmente de víctimas dispuestas a dar su testimonio.</p><p>Duvalier, de 61 años e hijo del también dictador François "Papa Doc" Duvalier, enfrenta varias acusaciones por arrestos arbitrarios, torturas y detenciones ilegales.</p><p>El 21 de febrero, luego de su tercera ausencia, el juez Jean-Joseph Lebrun había ordenado que el exdictador fuera "llevado" a la Corte para ser escuchado y fijó una nueva audiencia para este jueves.</p><p>"Se le acusa de arrestos ilegales, torturas y asesinatos políticos. ¿Qué responde? a esto", le preguntó el juez Lebrun.</p><media media-type="image" style="rightSide"><media-reference data-location="#photo1" mime-type=""/></media><p>El exdictador, contestó que cada vez que se le refería un caso "intervenía para que se hiciera justicia".</p><p>Interrogado sobre sus responsabilidades, Duvalier resaltó la situación existente durante su gobierno en comparación con la actual.</p><p>"Cuando llegué de vuelta (en enero de 2011), me encontré con un país hundido en la miseria y corroído por la corrupción (...) Ahora es mi turno de preguntar: ¿Qué le han hecho a mi país", exclamó desafiante ante los aplausos de sus simpatizantes.</p><p>"En ese momento, el gobierno quedó en la miseria pero las empresas públicas funcionaban bien (...) y los haitianos enviaban a sus hijos a la escuela. No puedo decir que la vida era color de rosa, pero la gente podía vivír decentemente", argumentó.</p><p>En enero de 2012, un juez de instrucción había ordenado a "Baby Doc" comparecer ante un tribunal correccional por desvío de fondos, pero no había dado lugar a las demandas contra el exdictador por crímenes contra la humanidad, al estimar que los delitos de los que se lo acusaba habían prescrito.</p><p>Esta decisión provocó la indignación de las organizaciones de defensa de los derechos humanos y de víctimas de la dictadura, que apelaron el fallo.</p><media media-type="image" style="leftSide"><media-reference data-location="#photo2" mime-type=""/></media><p>Pero los defensores de "Baby Doc" elevaron una demanda de casación, por lo que consideraron que el tribunal de apelaciones quedaba al margen del caso.</p><p>El Colectivo Contra la Impunidad, integrado por víctimas de la dictadura de los Duvalier (padre e hijo, de 1957-1986), recordó en un comunicado que había solicitado "reabrir una investigación judicial digna de ese nombre".</p><p>"Sin ello, no habrá más caso Duvalier, dado que el Estado podría acceder al abandono de los cargos por delitos financieros. Duvalier podría entonces acceder a los fondos bloqueados en Suiza", advirtió el Colectivo.</p><p>"Baby Doc" se hizo del poder a los 19 años, en 1971, prolongando una larga dictadura dinástica en uno de los países más pobres del continente americano.</p><p>Depuesto en 1986 por una rebelión popular, regresó espectacularmente a Haití en enero de 2011, tras 25 años de exilio en Francia.</p><p>Jean-Claude Duvalier es "un verdadero dictador, quien reveló su verdadero carácter", respondió a la AFP un ex preso político, el futbolista Bobby Robert Duval.</p><p>Exiliado durante la dictadura, Alix Fils-Aime celebró que "un dictador tuvo que comparecer ante un tribunal."</p><p>De su lado, en nombre de Amnistía Internacional Canadá de habla francesa Beatrice Vaugrante dio la bienvenida por la red social Twitter "un día histórico para la justicia" con "Duvalier ante las víctimas".</p><p>La audiencia terminó poco después de las 20H00 GMT.</p></DataContent>
+        </ContentItem>
+      </NewsComponent>
+          
+                                      <NewsComponent Duid="photo0">
+            <NewsLines>
+                            <HeadLine>El exdicator haitano Jean-Claude Duvalier llega este jeves a la Corte de Puerto Príncipe.</HeadLine>
+                            <CreditLine>AFP</CreditLine>
+                            <ByLine>Thony Belizaire</ByLine>
+                                        </NewsLines>
+            <AdministrativeMetadata>
+              <Provider>
+                                <Party FormalName="afp.com" />
+                              </Provider>
+              <Creator>
+                <Party FormalName="Thony Belizaire"/>
+              </Creator>
+                            <Source>
+                <Party FormalName="AFP"/>
+              </Source>
+            </AdministrativeMetadata>
+            <NewsComponent>
+                                                                                                  <Role FormalName="Caption"/>
+              <ContentItem>
+                <MediaType FormalName="Text"/>
+                <Format FormalName="bcNITF2.5"/>
+                <DataContent><p>El exdictador de Haití Jean-Claude Duvalier, objeto de varias demandas de opositores y que en tres oportunidades se había negado a comparecer ante la justicia, se presentó este jueves a un Tribunal de Apelaciones de Puerto Príncipe, constató un periodista de la AFP.</p></DataContent>
+              </ContentItem>
+            </NewsComponent>
+                                    <NewsComponent>
+                                          <Role FormalName="HighDef"/>
+                            <ContentItem Href="photo_1362091692584-3-HD.jpg">
+                <MediaType FormalName="Photo"/>
+                                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>66737</SizeInBytes>
+                  <Property FormalName="Width" Value="768"/>
+                  <Property FormalName="Height" Value="628"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                        <NewsComponent>
+                                                        <Role FormalName="Quicklook"/>
+                            <ContentItem Href="photo_1362091692584-3-1.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>9147</SizeInBytes>
+                  <Property FormalName="Width" Value="245"/>
+                  <Property FormalName="Height" Value="200"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                <NewsComponent>
+                                          <Role FormalName="Thumbnail"/>
+                            <ContentItem Href="photo_1362091692584-3-2.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>3237</SizeInBytes>
+                  <Property FormalName="Width" Value="110"/>
+                  <Property FormalName="Height" Value="90"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                                                          </NewsComponent>
+                                                    <NewsComponent Duid="photo1">
+            <NewsLines>
+                            <HeadLine>Partidarios de Jean Claude-Duvalier, a las afuera del Tribunal de Apelaciones el 28 de febrero de 2013.</HeadLine>
+                            <CreditLine>AFP</CreditLine>
+                            <ByLine>Thony Belizaire</ByLine>
+                                        </NewsLines>
+            <AdministrativeMetadata>
+              <Provider>
+                                <Party FormalName="afp.com" />
+                              </Provider>
+              <Creator>
+                <Party FormalName="Thony Belizaire"/>
+              </Creator>
+                            <Source>
+                <Party FormalName="AFP"/>
+              </Source>
+            </AdministrativeMetadata>
+            <NewsComponent>
+                                                                                                  <Role FormalName="Caption"/>
+              <ContentItem>
+                <MediaType FormalName="Text"/>
+                <Format FormalName="bcNITF2.5"/>
+                <DataContent><p>El Colectivo Contra la Impunidad, integrado por víctimas de la dictadura de los Duvalier (padre e hijo, de 1957-1986), recordó en un comunicado que había solicitado "reabrir una investigación judicial digna de ese nombre".</p></DataContent>
+              </ContentItem>
+            </NewsComponent>
+                                    <NewsComponent>
+                                          <Role FormalName="HighDef"/>
+                            <ContentItem Href="photo_1362073594789-3-HD.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>124239</SizeInBytes>
+                  <Property FormalName="Width" Value="768"/>
+                  <Property FormalName="Height" Value="534"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                        <NewsComponent>
+                                                        <Role FormalName="Quicklook"/>
+                            <ContentItem Href="photo_1362073594789-3-1.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>18069</SizeInBytes>
+                  <Property FormalName="Width" Value="245"/>
+                  <Property FormalName="Height" Value="170"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                <NewsComponent>
+                                          <Role FormalName="Thumbnail"/>
+                            <ContentItem Href="photo_1362073594789-3-2.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>5196</SizeInBytes>
+                  <Property FormalName="Width" Value="110"/>
+                  <Property FormalName="Height" Value="76"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                                                          </NewsComponent>
+                                                    <NewsComponent Duid="photo2">
+            <NewsLines>
+                            <HeadLine>Duvalier al arribo del Tribunal de Apelaciones en Puerto Príncipe el 28 de febrero de 2013.</HeadLine>
+                            <CreditLine>AFP</CreditLine>
+                            <ByLine>Thony Belizaire</ByLine>
+                                        </NewsLines>
+            <AdministrativeMetadata>
+              <Provider>
+                                <Party FormalName="afp.com" />
+                              </Provider>
+              <Creator>
+                <Party FormalName="Thony Belizaire"/>
+              </Creator>
+                            <Source>
+                <Party FormalName="AFP"/>
+              </Source>
+            </AdministrativeMetadata>
+            <NewsComponent>
+                                                                                                  <Role FormalName="Caption"/>
+              <ContentItem>
+                <MediaType FormalName="Text"/>
+                <Format FormalName="bcNITF2.5"/>
+                <DataContent><p>El exdictador de Haití Jean-Claude Duvalier, objeto de varias demandas de opositores y que en tres oportunidades se había negado a comparecer ante la justicia, se presentó este jueves a un Tribunal de Apelaciones de Puerto Príncipe, constató un periodista de la AFP</p></DataContent>
+              </ContentItem>
+            </NewsComponent>
+                                    <NewsComponent>
+                                          <Role FormalName="HighDef"/>
+                            <ContentItem Href="photo_1362073486533-3-HD.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>76718</SizeInBytes>
+                  <Property FormalName="Width" Value="768"/>
+                  <Property FormalName="Height" Value="598"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                        <NewsComponent>
+                                                        <Role FormalName="Quicklook"/>
+                            <ContentItem Href="photo_1362073486533-3-1.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>11968</SizeInBytes>
+                  <Property FormalName="Width" Value="245"/>
+                  <Property FormalName="Height" Value="191"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                <NewsComponent>
+                                          <Role FormalName="Thumbnail"/>
+                            <ContentItem Href="photo_1362073486533-3-2.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>3891</SizeInBytes>
+                  <Property FormalName="Width" Value="110"/>
+                  <Property FormalName="Height" Value="86"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                                                          </NewsComponent>
+                                </NewsComponent>
+  </NewsItem>
+</NewsML>

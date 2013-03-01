@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NewsML Version="1.2">
+        <Catalog Href="http://www.afp.com/dtd/AFPCatalog.xml"/>
+  <NewsEnvelope>
+        <DateAndTime>20130301T143306Z</DateAndTime>
+        <Priority FormalName="4"/>
+      </NewsEnvelope>
+  <NewsItem>
+    <Identification>
+      <NewsIdentifier>
+	        	                <ProviderId>afp.com</ProviderId>
+	                <DateId>20130301</DateId>
+                <NewsItemId>CNG.71d5a018744f5f43e9043020929ee574.301</NewsItemId>
+        			        <RevisionId PreviousRevision="1" Update="N">2</RevisionId>
+                <PublicIdentifier>urn:newsml:afp.com:20130301:CNG.71d5a018744f5f43e9043020929ee574.301:2</PublicIdentifier>
+      </NewsIdentifier>
+                              <NameLabel>diplomacia-Chile-Bolivia-militar</NameLabel>
+          </Identification>
+    <NewsManagement>
+      <NewsItemType FormalName="News"/>
+            <FirstCreated>20130301T140650Z</FirstCreated>
+            <ThisRevisionCreated>20130301T143305Z</ThisRevisionCreated>
+                        <Status FormalName="Usable"/>
+                </NewsManagement>
+    <NewsComponent>
+      <NewsLines>
+        <HeadLine>Justicia chilena suspende proceso contra tres soldados bolivianos (oficial)</HeadLine>
+                                                                              <ByLine>Por Paulina ABRAMOVICH</ByLine>
+                                  <DateLine>SANTIAGO (AFP)</DateLine>
+                <CopyrightLine>© 2013 AFP</CopyrightLine>
+        <SlugLine>diplomacia-Chile-Bolivia-militar</SlugLine>
+              </NewsLines>
+      <AdministrativeMetadata>
+        <Provider>
+	  <Party FormalName="afp.com" />
+        </Provider>
+                              </AdministrativeMetadata>
+      <DescriptiveMetadata>
+	<Language FormalName="es" />
+                <OfInterestTo FormalName="espanol--periodico--latinoamericaya"/>
+                                <Location HowPresent="Origin">
+                    <Property FormalName="Country" Value="CHL"/>
+                              <Property FormalName="City" Value="Santiago"/>
+                              <Property FormalName="Latitude" Value="-33.45406"/>
+                              <Property FormalName="Longitude" Value="-70.65599"/>
+                  </Location>
+                                                                        <SubjectCode>
+                                    <Subject FormalName="02000000"/>
+                                          </SubjectCode>
+                <SubjectCode>
+                                    <Subject FormalName="11000000"/>
+                                          </SubjectCode>
+                <SubjectCode>
+                                            <SubjectMatter FormalName="11002000"/>
+                                  </SubjectCode>
+                <SubjectCode>
+                                    <Subject FormalName="02000000"/>
+                                          </SubjectCode>
+                <SubjectCode>
+                                            <SubjectMatter FormalName="11014000"/>
+                                  </SubjectCode>
+                <SubjectCode>
+                                    <Subject FormalName="11000000"/>
+                                          </SubjectCode>
+                      </DescriptiveMetadata>
+                                                                                                                                <NewsComponent>
+        <ContentItem>
+          <MediaType FormalName="Text"/>
+          <Format FormalName="bcNITF2.5"/>
+          <DataContent><media media-type="image" style="leftSide"><media-reference data-location="#photo0" mime-type=""/></media><p>La justicia chilena aceptó este viernes un acuerdo entre la Fiscalía y la defensa y suspendió el proceso judicial en contra de tres soldados bolivianos, acusados de ingresar ilegalmente a Chile y de porte de armas, en un caso que puso en tensión las relaciones entre ambos países.</p><p>"En consecuencia, reuniéndose los requisitos (...) y considerándose por el tribunal ajustado a derecho la suspensión condicional del proceso propiciada por la Fiscalía y aceptada libremente por los tres imputados, se aprueba esta suspensión condicional del procedimiento", dijo el juez del caso, Rodrigo Hernández, en la audiencia pública.</p><p>Tras el acuerdo "los tres soldados imputados deberán hacer abandono inmediato del territorio nacional y no podrán retornar al mismo por un período de un año", agregó el juez del tribunal de Pozo Almonte, a unos 1.900 km al norte de Santiago, en la audiencia que fue transmitida en vivo por medios locales.</p><p>La resolución no implica la aceptación de culpabilidad por parte de los imputados, la que sería determinada recién al final de un juicio que con el acuerdo adoptado este viernes finalmente no se realizará, explicó el juez.</p><p>El acuerdo fue aceptado por los tres soldados bolivianos, los conscriptos Alex Choque, Augusto Cárdenas y José Fernández, que reafirmaron su inocencia durante la audiencia, a la que se presentaron vistiendo sus uniformes militares.</p><p> "Aceptamos ser liberados y somos inocentes", dijo el conscripto Alex Choque, el primero en ser consultado por el juez Hernández. Sus dos compañeros entregaron respuestas similares.</p><p>El juez fijó en 24 horas el plazo máximo de salida del país de los imputados. El abogado defensor, Roberto Celedón, dijo en la audiencia que se harán esfuerzos para que la salida de Chile se concrete este mismo viernes.</p><p>El caso se extendió por más de un mes y puso en tensión la relación entre Bolivia y Chile, dos países que carecen de relaciones diplomáticas desde 1978, debido a la irresoluta demanda boliviana de recuperar la salida al mar perdida en una guerra librada a fines del siglo XIX.</p><p>El presidente de Bolivia, Evo Morales, había calificado de "rehenes políticos" a los tres soldados, apresados por la policía chilena el 25 de enero pasado, portando un fusil de guerra. De acuerdo al gobierno boliviano al momento de su detención los tres soldados realizaban labores para evitar el contrabando.</p><media media-type="image" style="rightSide"><media-reference data-location="#photo1" mime-type=""/></media><p>Morales consideró además que la detención de los tres soldados era "una venganza del presidente (chileno, Sebastián) Piñera", por la persistencia del reclamo boliviano para recuperar su salida al mar.</p><p>El gobierno de Chile, por su parte, ha defendido la independencia del poder judicial y restado validez a las acusaciones de interferencia.</p><p>Los soldados permanecieron detenidos por cerca de un mes, hasta que fueron liberados provisionalmente el lunes pasado, a la espera del inicio del juicio.</p><p>El gobierno boliviano estimaba que este caso merecía simplemente una respuesta diplomática.</p></DataContent>
+        </ContentItem>
+      </NewsComponent>
+          
+                                      <NewsComponent Duid="photo0">
+            <NewsLines>
+                            <HeadLine>Bolivianos firman una carta en apoyo de los soldados bolivianos arrestados en Chile, en enero de 2013</HeadLine>
+                            <CreditLine>AFP/Archivo</CreditLine>
+                            <ByLine>Aizar Raldes</ByLine>
+                                        </NewsLines>
+            <AdministrativeMetadata>
+              <Provider>
+                                <Party FormalName="afp.com" />
+                              </Provider>
+              <Creator>
+                <Party FormalName="Aizar Raldes"/>
+              </Creator>
+                            <Source>
+                <Party FormalName="AFP"/>
+              </Source>
+            </AdministrativeMetadata>
+            <NewsComponent>
+                                                                                                  <Role FormalName="Caption"/>
+              <ContentItem>
+                <MediaType FormalName="Text"/>
+                <Format FormalName="bcNITF2.5"/>
+                <DataContent><p>La justicia chilena aceptó este viernes un acuerdo entre la Fiscalía y la defensa y suspendió el proceso judicial en contra de tres soldados bolivianos, acusados de ingresar ilegalmente a Chile y de porte de armas, en un caso que puso en tensión las relaciones entre ambos países.</p></DataContent>
+              </ContentItem>
+            </NewsComponent>
+                                    <NewsComponent>
+                                          <Role FormalName="HighDef"/>
+                            <ContentItem Href="photo_1362147378745-1-HD.jpg">
+                <MediaType FormalName="Photo"/>
+                                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>110221</SizeInBytes>
+                  <Property FormalName="Width" Value="768"/>
+                  <Property FormalName="Height" Value="511"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                        <NewsComponent>
+                                                        <Role FormalName="Quicklook"/>
+                            <ContentItem Href="photo_1362147378745-1-1.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>15963</SizeInBytes>
+                  <Property FormalName="Width" Value="245"/>
+                  <Property FormalName="Height" Value="163"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                <NewsComponent>
+                                          <Role FormalName="Thumbnail"/>
+                            <ContentItem Href="photo_1362147378745-1-2.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>4584</SizeInBytes>
+                  <Property FormalName="Width" Value="110"/>
+                  <Property FormalName="Height" Value="73"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                                                          </NewsComponent>
+                                                    <NewsComponent Duid="photo1">
+            <NewsLines>
+                            <HeadLine>Los tres soldados bolivianos arrestados de hace un mese en Chile durante una audiencia en Iquique.</HeadLine>
+                            <CreditLine>AFP</CreditLine>
+                            <ByLine>str</ByLine>
+                                        </NewsLines>
+            <AdministrativeMetadata>
+              <Provider>
+                                <Party FormalName="afp.com" />
+                              </Provider>
+              <Creator>
+                <Party FormalName="str"/>
+              </Creator>
+                            <Source>
+                <Party FormalName="AFP"/>
+              </Source>
+            </AdministrativeMetadata>
+            <NewsComponent>
+                                                                                                  <Role FormalName="Caption"/>
+              <ContentItem>
+                <MediaType FormalName="Text"/>
+                <Format FormalName="bcNITF2.5"/>
+                <DataContent><p>El caso se extendió por más de un mes y puso en tensión la relación entre Bolivia y Chile, dos países que carecen de relaciones diplomáticas desde 1978, debido a la irresoluta demanda boliviana de recuperar la salida al mar perdida en una guerra librada a fines del siglo XIX.</p></DataContent>
+              </ContentItem>
+            </NewsComponent>
+                                    <NewsComponent>
+                                          <Role FormalName="HighDef"/>
+                            <ContentItem Href="photo_1362147244863-1-HD.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>78332</SizeInBytes>
+                  <Property FormalName="Width" Value="768"/>
+                  <Property FormalName="Height" Value="539"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                        <NewsComponent>
+                                                        <Role FormalName="Quicklook"/>
+                            <ContentItem Href="photo_1362147244863-1-1.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>10360</SizeInBytes>
+                  <Property FormalName="Width" Value="245"/>
+                  <Property FormalName="Height" Value="172"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                <NewsComponent>
+                                          <Role FormalName="Thumbnail"/>
+                            <ContentItem Href="photo_1362147244863-1-2.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>3389</SizeInBytes>
+                  <Property FormalName="Width" Value="110"/>
+                  <Property FormalName="Height" Value="77"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                                                          </NewsComponent>
+                                </NewsComponent>
+  </NewsItem>
+</NewsML>

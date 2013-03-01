@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NewsML Version="1.2">
+        <Catalog Href="http://www.afp.com/dtd/AFPCatalog.xml"/>
+  <NewsEnvelope>
+        <DateAndTime>20130301T114126Z</DateAndTime>
+        <Priority FormalName="4"/>
+      </NewsEnvelope>
+  <NewsItem>
+    <Identification>
+      <NewsIdentifier>
+	        	                <ProviderId>afp.com</ProviderId>
+	                <DateId>20130301</DateId>
+                <NewsItemId>CNG.f7c96412debb3e856752a70888fefa17.7b1</NewsItemId>
+        			        <RevisionId PreviousRevision="0" Update="N">1</RevisionId>
+                <PublicIdentifier>urn:newsml:afp.com:20130301:CNG.f7c96412debb3e856752a70888fefa17.7b1:1</PublicIdentifier>
+      </NewsIdentifier>
+                              <NameLabel>Argelia-Malí-conflicto-AlQaida</NameLabel>
+          </Identification>
+    <NewsManagement>
+      <NewsItemType FormalName="News"/>
+            <FirstCreated>20130301T100858Z</FirstCreated>
+            <ThisRevisionCreated>20130301T114124Z</ThisRevisionCreated>
+                        <Status FormalName="Usable"/>
+                </NewsManagement>
+    <NewsComponent>
+      <NewsLines>
+        <HeadLine>"No hay confirmación" de la muerte del principal dirigente de AQMI</HeadLine>
+                                                                                          <DateLine>PARÍS (AFP)</DateLine>
+                <CopyrightLine>© 2013 AFP</CopyrightLine>
+        <SlugLine>Argelia-Malí-conflicto-AlQaida</SlugLine>
+              </NewsLines>
+      <AdministrativeMetadata>
+        <Provider>
+	  <Party FormalName="afp.com" />
+        </Provider>
+                              </AdministrativeMetadata>
+      <DescriptiveMetadata>
+	<Language FormalName="es" />
+                <OfInterestTo FormalName="espanol--periodico--mundoya"/>
+                                <Location HowPresent="Origin">
+                    <Property FormalName="Country" Value="FRA"/>
+                              <Property FormalName="City" Value="París"/>
+                              <Property FormalName="Latitude" Value="48.85341"/>
+                              <Property FormalName="Longitude" Value="2.3488"/>
+                  </Location>
+                                                                        <SubjectCode>
+                                    <Subject FormalName="16000000"/>
+                                          </SubjectCode>
+                      </DescriptiveMetadata>
+                                                                                                                                <NewsComponent>
+        <ContentItem>
+          <MediaType FormalName="Text"/>
+          <Format FormalName="bcNITF2.5"/>
+          <DataContent><media media-type="image" style="leftSide"><media-reference data-location="#photo0" mime-type=""/></media><p>La portavoz del gobierno francés, Najat Vallaud-Belkacem, declaró este viernes que la muerte de Abú Zeid, uno de los principales dirigentes de Al Qaeda en el Magreb Islámico (AQMI), debe ser "puesta en condicional", dado que "no hay confirmación oficial".</p><p>Entrevistada por el canal France 2 sobre esa información dada por la televisión argelina Ennahar, la ministra respondió que la información debe ser "puesta en codicional, dado que no tenemos confirmación oficial".</p><p>La televisión privada argelina Ennahar afirmó el jueves en su portal de internet que, según fuentes de las fuerzas de seguridad, Abdelhamid Abú Zeid, considerado uno de los jefes de AQMI más radicales y violentos, murió en el norte de Malí junto con otros 40 islamistas.</p><p>"Las tropas francesas detuvieron a tres terroristas, cerca de Tigharghar", en el norte de Malí, y, "según fuentes de seguridad, descubrieron (los cuerpos) de 40 terroristas, incluyendo el de Abu Zeid", indicó Ennahar en su portal.</p><p>Nacido en la pequeña ciudad de Tougourt (a 660 kilómetros al sur de Argel), Abu Zeid se convirtió a los 24 años en miembro del comité local del Frente Islámico de Salvación (FIS) y, a finales de 1991, se adhirió a la lucha armada.</p><p>En 2003, durante el espectacular secuestro de 32 turistas europeos por el todavía Grupo Salafista para la Predicación y el Combate (GSPC), en el sur argelino, Abu Zeid apareció por primera vez como subjefe de los secuestradores junto al líder, Abderazak le Para.</p><p>Actualmente, se le considera uno de los principales jefes de AQMI.</p></DataContent>
+        </ContentItem>
+      </NewsComponent>
+          
+                                      <NewsComponent Duid="photo0">
+            <NewsLines>
+                            <HeadLine>El dirigente de AQMI Abú Zeid, en una imagen difundida el 25 de diciembre de 2012 por Sahara Media</HeadLine>
+                            <CreditLine>SaharaMedia/AFP/Archivo</CreditLine>
+                            <ByLine></ByLine>
+                                          <NewsLine>
+                <NewsLineType FormalName="AdvisoryLine" />
+                <NewsLineText>=== RESTRICTED TO EDITORIAL USE - MANDATORY CREDIT &quot;AFP PHOTO / SAHARA MEDIA &quot; - NO MARKETING NO ADVERTISING CAMPAIGNS - DISTRIBUTED AS A SERVICE TO CLIENTS = NO FILES</NewsLineText>
+              </NewsLine>
+                          </NewsLines>
+            <AdministrativeMetadata>
+              <Provider>
+                                <Party FormalName="afp.com" />
+                              </Provider>
+              <Creator>
+                <Party FormalName=""/>
+              </Creator>
+                            <Source>
+                <Party FormalName="Sahara Media"/>
+              </Source>
+            </AdministrativeMetadata>
+            <NewsComponent>
+                                                                                                  <Role FormalName="Caption"/>
+              <ContentItem>
+                <MediaType FormalName="Text"/>
+                <Format FormalName="bcNITF2.5"/>
+                <DataContent><p>La portavoz del gobierno francés, Najat Vallaud-Belkacem, declaró este viernes que la muerte de Abú Zeid, uno de los principales dirigentes de Al Qaeda en el Magreb Islámico (AQMI), debe ser "puesta en condicional", dado que "no hay confirmación oficial".</p></DataContent>
+              </ContentItem>
+            </NewsComponent>
+                                    <NewsComponent>
+                                          <Role FormalName="HighDef"/>
+                            <ContentItem Href="photo_1362137569127-1-HD.jpg">
+                <MediaType FormalName="Photo"/>
+                                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>73129</SizeInBytes>
+                  <Property FormalName="Width" Value="768"/>
+                  <Property FormalName="Height" Value="466"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                        <NewsComponent>
+                                                        <Role FormalName="Quicklook"/>
+                            <ContentItem Href="photo_1362137569127-1-1.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>14523</SizeInBytes>
+                  <Property FormalName="Width" Value="245"/>
+                  <Property FormalName="Height" Value="149"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                <NewsComponent>
+                                          <Role FormalName="Thumbnail"/>
+                            <ContentItem Href="photo_1362137569127-1-2.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>4687</SizeInBytes>
+                  <Property FormalName="Width" Value="110"/>
+                  <Property FormalName="Height" Value="67"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                                                          </NewsComponent>
+                                </NewsComponent>
+  </NewsItem>
+</NewsML>

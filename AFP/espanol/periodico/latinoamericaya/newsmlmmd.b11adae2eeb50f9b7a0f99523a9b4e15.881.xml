@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NewsML Version="1.2">
+        <Catalog Href="http://www.afp.com/dtd/AFPCatalog.xml"/>
+  <NewsEnvelope>
+        <DateAndTime>20130228T191344Z</DateAndTime>
+        <Priority FormalName="4"/>
+      </NewsEnvelope>
+  <NewsItem>
+    <Identification>
+      <NewsIdentifier>
+	        	                <ProviderId>afp.com</ProviderId>
+	                <DateId>20130228</DateId>
+                <NewsItemId>CNG.b11adae2eeb50f9b7a0f99523a9b4e15.881</NewsItemId>
+        			        <RevisionId PreviousRevision="0" Update="N">1</RevisionId>
+                <PublicIdentifier>urn:newsml:afp.com:20130228:CNG.b11adae2eeb50f9b7a0f99523a9b4e15.881:1</PublicIdentifier>
+      </NewsIdentifier>
+                              <NameLabel>Colombia-conflicto-guerrilla-paz-Farc-Cuba</NameLabel>
+          </Identification>
+    <NewsManagement>
+      <NewsItemType FormalName="News"/>
+            <FirstCreated>20130228T175225Z</FirstCreated>
+            <ThisRevisionCreated>20130228T191336Z</ThisRevisionCreated>
+                        <Status FormalName="Usable"/>
+                </NewsManagement>
+    <NewsComponent>
+      <NewsLines>
+        <HeadLine>El proceso de paz de Colombia entra en zona de turbulencias</HeadLine>
+                                                                              <ByLine>Por Philippe ZYGEL</ByLine>
+                                  <DateLine>BOGOTÃ (AFP)</DateLine>
+                <CopyrightLine>© 2013 AFP</CopyrightLine>
+        <SlugLine>Colombia-conflicto-guerrilla-paz-Farc-Cuba</SlugLine>
+              </NewsLines>
+      <AdministrativeMetadata>
+        <Provider>
+	  <Party FormalName="afp.com" />
+        </Provider>
+                              </AdministrativeMetadata>
+      <DescriptiveMetadata>
+	<Language FormalName="es" />
+                <OfInterestTo FormalName="espanol--periodico--latinoamericaya"/>
+                                <Location HowPresent="Origin">
+                    <Property FormalName="Country" Value="COL"/>
+                              <Property FormalName="City" Value="Bogotá"/>
+                              <Property FormalName="Latitude" Value="13.33333"/>
+                              <Property FormalName="Longitude" Value="-81.35"/>
+                  </Location>
+                                                                        <SubjectCode>
+                                            <SubjectMatter FormalName="16005000"/>
+                                  </SubjectCode>
+                <SubjectCode>
+                                    <Subject FormalName="16000000"/>
+                                          </SubjectCode>
+                <SubjectCode>
+                                            <SubjectMatter FormalName="11002000"/>
+                                  </SubjectCode>
+                <SubjectCode>
+                                            <SubjectMatter FormalName="16002000"/>
+                                  </SubjectCode>
+                      </DescriptiveMetadata>
+                                                                                                                                <NewsComponent>
+        <ContentItem>
+          <MediaType FormalName="Text"/>
+          <Format FormalName="bcNITF2.5"/>
+          <DataContent><media media-type="image" style="leftSide"><media-reference data-location="#photo0" mime-type=""/></media><p>En medio de acusaciones mutuas y con el enfrentamiento armado en marcha en Colombia, el proceso de paz que adelanta el gobierno de Juan Manuel Santos con las FARC en La Habana parece entrar en una zona de turbulencias, a un año de las elecciones presidenciales.</p><p>El presidente Santos advirtió recientemente que podría poner fin al diálogo de paz que desde noviembre pasado lleva a cabo con las comunistas Fuerzas Armadas Revolucionarias de Colombia (FARC), la guerrilla más antigua de América Latina con 48 años de lucha armada.</p><p>"Si no avanzamos, nos paramos de la mesa", le lanzó Santos a las FARC, que en seguida respondió con un llamado a la población a "movilizarse en defensa del proceso de paz".</p><p>Para Ariel Avila, especialista en el conflicto armado colombiano de la Corporación Nuevo Arco Iris, estas declaraciones evidencian que "la mesa no está avanzado tan rápido como quiere el gobierno. Todos saben que está en una carrera contrarreloj".</p><p>Santos, un dirigente de centro-derecha de 61 años, será probablemente candidato a la reelección en 2014, y se ha fijado el mes de noviembre como plazo para alcanzar un acuerdo con la guerrilla, pese a que los rebeldes reiteradamente han rechazado ponerle fecha de conclusión al proceso de paz y constantemente critican la acción gubernamental.</p><p>Esta "es una guerra de comunicación. El gobierno quiere quitarle la iniciativa a las FARC, entonces se lanzó en una ofensiva mediática muy agresiva", señaló Avila.</p><p>"Desgraciadamente, la campaña electoral ya empezó", destacó este experto.</p><p>En ese ambiente, el expresidente Álvaro Uribe, muy popular por su actitud intransigente ante las FARC, mantiene la presión sobre Santos, su exministro de Defensa al que acusa de traición.</p><media media-type="image" style="rightSide"><media-reference data-location="#photo1" mime-type=""/></media><p>Así, Uribe ha creado un nuevo movimiento político y se muestra decidido a aprovechar cualquier traspié de cara a las presidenciales.</p><p>Desde diciembre, el apoyo de los colombianos al proceso de paz ha descendido de 62% a 54% y la popularidad de Santos de 53% a 44%, según un sondeo de la firma encuestadora Gallup publicado esta semana.</p><p>Según Javier Ciurlizza, responsable regional de la ONG International Crisis Group, especializada en la resolución de conflictos, las dificultades actuales se derivan de la "doble estrategia que el gobierno escogió para negociar la paz", al referirse a la decisión de llevar a cabo el diálogo sin un cese el fuego bilateral, en un intento por evitar las críticas de sus opositores.</p><p>"Por un lado, las conversaciones pareciera que avanzan, pero de otro lado en Colombia la guerra continúa. Eso afecta la credibilidad del proceso", dijo Ciurlizza.</p><p>"Esa esquizofrenia tuvo lógica al inicio porque era importante mantener las negociaciones protegidas de las consecuencias de la guerra, pero va llegando el momento en que se necesita decisiones y anuncios de parte de los dos campos", apuntó.</p><p>Ciurlizza refiere que la mesa de conversaciones en Cuba ha logrado acuerdos preliminares en el tema de desarrollo rural, reconocido como la raíz del conflicto colombiano, y otros avances en cuestiones de justicia transicional para la reinserción de los guerrilleros.</p><media media-type="image" style="leftSide"><media-reference data-location="#photo2" mime-type=""/></media><p>Pero esto choca con la imposibilidad de establecer acuerdos humanitarios prácticos que contribuyan a "reducir la intensidad de la guerra, y generar una mejor base social de apoyo".</p><p>El conflicto armado de Colombia, en el que han intervenido también otras guerrillas de izquierda, grupos paramilitares de derecha y organizaciones del narcotráfico, ha dejado a lo largo de medio siglo unos 600.000 muertos, 15.000 desaparecidos y más de 3,5 millones de personas desplazadas por la violencia.</p><p>Pero en este momento, las escaramuzas entre el gobierno y la guerrilla corresponden a una "situación nacional", de acuerdo con el politólogo Alejo Vargas, quien asegura que "en la mesa todo funciona bastante bien".</p><p>"Una cosa son los discursos, y otra lo que pasa en la mesa". Las partes quieren "mandar un mensaje a los colombianos, pero es para la galería", concluyó este profesor de la Universidad Nacional de Colombia.</p></DataContent>
+        </ContentItem>
+      </NewsComponent>
+          
+                                      <NewsComponent Duid="photo0">
+            <NewsLines>
+                            <HeadLine>El jefe de la delegación de las FARC en La Habana, Iván Márquez, el 10 de febrero de 2013.</HeadLine>
+                            <CreditLine>AFP</CreditLine>
+                            <ByLine>Adalberto Roque</ByLine>
+                                        </NewsLines>
+            <AdministrativeMetadata>
+              <Provider>
+                                <Party FormalName="afp.com" />
+                              </Provider>
+              <Creator>
+                <Party FormalName="Adalberto Roque"/>
+              </Creator>
+                            <Source>
+                <Party FormalName="AFP"/>
+              </Source>
+            </AdministrativeMetadata>
+            <NewsComponent>
+                                                                                                  <Role FormalName="Caption"/>
+              <ContentItem>
+                <MediaType FormalName="Text"/>
+                <Format FormalName="bcNITF2.5"/>
+                <DataContent><p>En medio de acusaciones mutuas y con el enfrentamiento armado en marcha en Colombia, el proceso de paz que adelanta el gobierno de Juan Manuel Santos con las FARC en La Habana parece entrar en una zona de turbulencias, a un año de las elecciones presidenciales.</p></DataContent>
+              </ContentItem>
+            </NewsComponent>
+                                    <NewsComponent>
+                                          <Role FormalName="HighDef"/>
+                            <ContentItem Href="photo_1362078362357-1-HD.jpg">
+                <MediaType FormalName="Photo"/>
+                                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>86445</SizeInBytes>
+                  <Property FormalName="Width" Value="768"/>
+                  <Property FormalName="Height" Value="573"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                        <NewsComponent>
+                                                        <Role FormalName="Quicklook"/>
+                            <ContentItem Href="photo_1362078362357-1-1.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>11692</SizeInBytes>
+                  <Property FormalName="Width" Value="245"/>
+                  <Property FormalName="Height" Value="183"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                <NewsComponent>
+                                          <Role FormalName="Thumbnail"/>
+                            <ContentItem Href="photo_1362078362357-1-2.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>3783</SizeInBytes>
+                  <Property FormalName="Width" Value="110"/>
+                  <Property FormalName="Height" Value="82"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                                                          </NewsComponent>
+                                                    <NewsComponent Duid="photo1">
+            <NewsLines>
+                            <HeadLine>Santos durante una conferencia de presna el 12 de enero de 2013 en Bogotá, Colombia.</HeadLine>
+                            <CreditLine>AFP</CreditLine>
+                            <ByLine>Guillermo Legaria</ByLine>
+                                        </NewsLines>
+            <AdministrativeMetadata>
+              <Provider>
+                                <Party FormalName="afp.com" />
+                              </Provider>
+              <Creator>
+                <Party FormalName="Guillermo Legaria"/>
+              </Creator>
+                            <Source>
+                <Party FormalName="AFP"/>
+              </Source>
+            </AdministrativeMetadata>
+            <NewsComponent>
+                                                                                                  <Role FormalName="Caption"/>
+              <ContentItem>
+                <MediaType FormalName="Text"/>
+                <Format FormalName="bcNITF2.5"/>
+                <DataContent><p>Santos, un dirigente de centro-derecha de 61 años, será probablemente candidato a la reelección en 2014, y se ha fijado el mes de noviembre como plazo para alcanzar un acuerdo con la guerrilla, pese a que los rebeldes reiteradamente han rechazado ponerle fecha de conclusión al proceso de paz y constantemente critican la acción gubernamental.</p></DataContent>
+              </ContentItem>
+            </NewsComponent>
+                                    <NewsComponent>
+                                          <Role FormalName="HighDef"/>
+                            <ContentItem Href="photo_1362078483078-1-HD.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>46153</SizeInBytes>
+                  <Property FormalName="Width" Value="768"/>
+                  <Property FormalName="Height" Value="514"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                        <NewsComponent>
+                                                        <Role FormalName="Quicklook"/>
+                            <ContentItem Href="photo_1362078483078-1-1.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>8581</SizeInBytes>
+                  <Property FormalName="Width" Value="245"/>
+                  <Property FormalName="Height" Value="164"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                <NewsComponent>
+                                          <Role FormalName="Thumbnail"/>
+                            <ContentItem Href="photo_1362078483078-1-2.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>3096</SizeInBytes>
+                  <Property FormalName="Width" Value="110"/>
+                  <Property FormalName="Height" Value="74"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                                                          </NewsComponent>
+                                                    <NewsComponent Duid="photo2">
+            <NewsLines>
+                            <HeadLine>Uribe durante la presentación de su libro &quot;No hay causa perdida&quot; el 18 de octubre de 2012.</HeadLine>
+                            <CreditLine>AFP</CreditLine>
+                            <ByLine>Raúl Arboleda</ByLine>
+                                        </NewsLines>
+            <AdministrativeMetadata>
+              <Provider>
+                                <Party FormalName="afp.com" />
+                              </Provider>
+              <Creator>
+                <Party FormalName="Raúl Arboleda"/>
+              </Creator>
+                            <Source>
+                <Party FormalName="AFP"/>
+              </Source>
+            </AdministrativeMetadata>
+            <NewsComponent>
+                                                                                                  <Role FormalName="Caption"/>
+              <ContentItem>
+                <MediaType FormalName="Text"/>
+                <Format FormalName="bcNITF2.5"/>
+                <DataContent><p>El expresidente Álvaro Uribe, muy popular por su actitud intransigente ante las FARC, mantiene la presión sobre Santos, su exministro de Defensa al que acusa de traición.</p></DataContent>
+              </ContentItem>
+            </NewsComponent>
+                                    <NewsComponent>
+                                          <Role FormalName="HighDef"/>
+                            <ContentItem Href="photo_1362078667829-1-HD.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>68661</SizeInBytes>
+                  <Property FormalName="Width" Value="768"/>
+                  <Property FormalName="Height" Value="547"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                        <NewsComponent>
+                                                        <Role FormalName="Quicklook"/>
+                            <ContentItem Href="photo_1362078667829-1-1.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>10397</SizeInBytes>
+                  <Property FormalName="Width" Value="245"/>
+                  <Property FormalName="Height" Value="175"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                <NewsComponent>
+                                          <Role FormalName="Thumbnail"/>
+                            <ContentItem Href="photo_1362078667829-1-2.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>3561</SizeInBytes>
+                  <Property FormalName="Width" Value="110"/>
+                  <Property FormalName="Height" Value="78"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                                                          </NewsComponent>
+                                </NewsComponent>
+  </NewsItem>
+</NewsML>

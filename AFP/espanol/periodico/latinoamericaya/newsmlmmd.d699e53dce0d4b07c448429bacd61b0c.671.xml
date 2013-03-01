@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NewsML Version="1.2">
+        <Catalog Href="http://www.afp.com/dtd/AFPCatalog.xml"/>
+  <NewsEnvelope>
+        <DateAndTime>20130228T211047Z</DateAndTime>
+        <Priority FormalName="4"/>
+      </NewsEnvelope>
+  <NewsItem>
+    <Identification>
+      <NewsIdentifier>
+	        	                <ProviderId>afp.com</ProviderId>
+	                <DateId>20130228</DateId>
+                <NewsItemId>CNG.d699e53dce0d4b07c448429bacd61b0c.671</NewsItemId>
+        			        <RevisionId PreviousRevision="0" Update="N">1</RevisionId>
+                <PublicIdentifier>urn:newsml:afp.com:20130228:CNG.d699e53dce0d4b07c448429bacd61b0c.671:1</PublicIdentifier>
+      </NewsIdentifier>
+                              <NameLabel>España-Cuba-política-disidencia-justicia</NameLabel>
+          </Identification>
+    <NewsManagement>
+      <NewsItemType FormalName="News"/>
+            <FirstCreated>20130228T205538Z</FirstCreated>
+            <ThisRevisionCreated>20130228T211044Z</ThisRevisionCreated>
+                        <Status FormalName="Usable"/>
+                </NewsManagement>
+    <NewsComponent>
+      <NewsLines>
+        <HeadLine>Carromero asegura que la muerte de Payá no fue accidental, dice su hija</HeadLine>
+                                                                              <ByLine>Por Anna CUENCA</ByLine>
+                                  <DateLine>MADRID (AFP)</DateLine>
+                <CopyrightLine>© 2013 AFP</CopyrightLine>
+        <SlugLine>España-Cuba-política-disidencia-justicia</SlugLine>
+              </NewsLines>
+      <AdministrativeMetadata>
+        <Provider>
+	  <Party FormalName="afp.com" />
+        </Provider>
+                              </AdministrativeMetadata>
+      <DescriptiveMetadata>
+	<Language FormalName="es" />
+                <OfInterestTo FormalName="espanol--periodico--latinoamericaya"/>
+                                <Location HowPresent="Origin">
+                    <Property FormalName="Country" Value="ESP"/>
+                              <Property FormalName="City" Value="Madrid"/>
+                              <Property FormalName="Latitude" Value="40.4165"/>
+                              <Property FormalName="Longitude" Value="-3.70256"/>
+                  </Location>
+                                                                        <SubjectCode>
+                                    <Subject FormalName="11000000"/>
+                                          </SubjectCode>
+                <SubjectCode>
+                                    <Subject FormalName="02000000"/>
+                                          </SubjectCode>
+                      </DescriptiveMetadata>
+                                                                                                                                <NewsComponent>
+        <ContentItem>
+          <MediaType FormalName="Text"/>
+          <Format FormalName="bcNITF2.5"/>
+          <DataContent><media media-type="image" style="leftSide"><media-reference data-location="#photo0" mime-type=""/></media><p>La hija del disidente cubano Oswaldo Payá habló en Madrid con el joven político conservador español Angel Carromero, quien conducía el automóvil en que murió su padre, y éste le confirmó que no se trató de un accidente, aseguró este jueves Rosa María Payá.</p><p>"Yo he hablado con Angel Carromero directamente y él me ha confirmado lo que ya sabíamos (...) por la historia de amenazas de muerte que tenía mi padre", dijo Rosa María Payá, de 24 años, a la AFP en Madrid.</p><p>"Me ha dicho que fueron seguidos la mayor parte del viaje y que un auto en algún momento los golpeó y sacó el carro en que iban de la carretera", afirmó la joven, que se encuentra en Madrid tras haber asistido a un encuentro sobre derechos humanos en Ginebra.</p><p>Según le habría dicho Carromero, "en ese momento vienen dos personas y sacan a los dos sobrevivientes extranjeros del lugar de los hechos", agregó, precisando que su padre, de 60 años, no fue atendido.</p><p>El líder disidente cubano y otro opositor, Harold Cepero, de 31 años, murieron el 22 de julio cuando viajaban en un automóvil de alquiler acompañados por un joven político conservador sueco, Jens Aron Modig, y por Carromero, al volante del vehículo.</p><p>A unos 700 kilómetros de La Habana, el automóvil salió de la carretera y, según la versión oficial, se estrelló contra un árbol en las afueras de Bayamo.</p><p>Condenado a cuatro años de cárcel en Cuba por homicidio imprudente, Carromero, de 27 años, dirigente del movimiento juvenil del Partido Popular (PP, derecha) del presidente del gobierno español Mariano Rajoy, cumple su condena en España en régimen de semilibertad después de que Madrid llegase a un acuerdo con La Habana para repatriarlo.</p><media media-type="image" style="rightSide"><media-reference data-location="#photo1" mime-type=""/></media><p>Desde un principio, la familia de Payá -candidato en cinco ocasiones al premio Nobel de la Paz y galardonado en 2002 por el Parlamento Europeo con el premio Sajarov de derechos humanos- exculpó a Carromero de toda responsabilidad y sigue exigiendo "una investigación independiente a la del gobierno" cubano sobre su muerte.</p><p>"Angel no recuerda nunca haberse estrellado contra ningún árbol, ni que el carro diese vueltas ni nada parecido, solamente que los golpearon por atrás, los desestabilizaron y después sacaron a los dos extranjeros del lugar", aseguró Rosa María Payá.</p><p>Desde su llegada a España, Carromero no hizo declaraciones a la prensa. Sin embargo, opositores cubanos en este país le habían pedido que esclareciera las circunstancias de la muerte de Payá.</p><p>"Necesitamos saber la verdad de su propia boca, porque los cubanos nos jugamos mucho denunciando y acusando a nuestros verdugos si nos equivocamos", afirmó la plataforma disidente Cuba Democracia Ya en una carta entregada al joven político.</p><p>Carromero "recuerda que lo sacaron del auto, que él les preguntó quiénes eran, que por qué le estaban haciendo eso, luego hay un espacio durante el que probablemente estuvo inconsciente, y después ya lo que recuerda es estar en el hospital", explicó este jueves Rosa María Paya, quien antes de volver a Cuba planea viajar también a Suecia.</p><p>Gracias a una pulsera de control telemático, Carromero puede cumplir los años de condena que le quedan viviendo en su casa y acudiendo a su trabajo como asesor en el ayuntamiento de Madrid, gobernado por el PP.</p><p>Esta alcaldía decidió en enero dar el nombre de Payá a una de sus calles en homenaje a la "convicción democrática de Oswaldo y el deseo que tenía de un cambio en Cuba por la vía política".</p><p>Por su parte, el ministro español de Asuntos Exteriores, José Manuel García-Margallo, afirmó este jueves que a cambio de la liberación de Carromero el gobierno cubano había pedido una modificación de la política europea hacia Cuba a lo que España se negó.</p></DataContent>
+        </ContentItem>
+      </NewsComponent>
+          
+                                      <NewsComponent Duid="photo0">
+            <NewsLines>
+                            <HeadLine>Los hijos de disidente cubano Oswaldo Payá, Reinaldo (D) y Rosa María, el 6 de octubre de 2012 en Bayamo, Cuba</HeadLine>
+                            <CreditLine>AFP</CreditLine>
+                            <ByLine>Adalberto Roque</ByLine>
+                                        </NewsLines>
+            <AdministrativeMetadata>
+              <Provider>
+                                <Party FormalName="afp.com" />
+                              </Provider>
+              <Creator>
+                <Party FormalName="Adalberto Roque"/>
+              </Creator>
+                            <Source>
+                <Party FormalName="AFP"/>
+              </Source>
+            </AdministrativeMetadata>
+            <NewsComponent>
+                                                                                                  <Role FormalName="Caption"/>
+              <ContentItem>
+                <MediaType FormalName="Text"/>
+                <Format FormalName="bcNITF2.5"/>
+                <DataContent><p>La hija del disidente cubano Oswaldo Payá habló en Madrid con el joven político conservador español Angel Carromero, quien conducía el automóvil en que murió su padre, y éste le confirmó que no se trató de un accidente, aseguró este jueves Rosa María Payá.</p></DataContent>
+              </ContentItem>
+            </NewsComponent>
+                                    <NewsComponent>
+                                          <Role FormalName="HighDef"/>
+                            <ContentItem Href="photo_1362085716373-1-HD.jpg">
+                <MediaType FormalName="Photo"/>
+                                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>129609</SizeInBytes>
+                  <Property FormalName="Width" Value="768"/>
+                  <Property FormalName="Height" Value="511"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                        <NewsComponent>
+                                                        <Role FormalName="Quicklook"/>
+                            <ContentItem Href="photo_1362085716373-1-1.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>14332</SizeInBytes>
+                  <Property FormalName="Width" Value="245"/>
+                  <Property FormalName="Height" Value="163"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                <NewsComponent>
+                                          <Role FormalName="Thumbnail"/>
+                            <ContentItem Href="photo_1362085716373-1-2.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>3901</SizeInBytes>
+                  <Property FormalName="Width" Value="110"/>
+                  <Property FormalName="Height" Value="73"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                                                          </NewsComponent>
+                                                    <NewsComponent Duid="photo1">
+            <NewsLines>
+                            <HeadLine>Ángel Carromero, en un vídeo divulgado el 30 de julio de 2012 por el Gobierno de Cuba.</HeadLine>
+                            <CreditLine>AFP/Archivo</CreditLine>
+                            <ByLine>ho</ByLine>
+                                        </NewsLines>
+            <AdministrativeMetadata>
+              <Provider>
+                                <Party FormalName="afp.com" />
+                              </Provider>
+              <Creator>
+                <Party FormalName="ho"/>
+              </Creator>
+                            <Source>
+                <Party FormalName="AFP"/>
+              </Source>
+            </AdministrativeMetadata>
+            <NewsComponent>
+                                                                                                  <Role FormalName="Caption"/>
+              <ContentItem>
+                <MediaType FormalName="Text"/>
+                <Format FormalName="bcNITF2.5"/>
+                <DataContent><p>Condenado a cuatro años de cárcel en Cuba por homicidio imprudente, Carromero, de 27 años, dirigente del movimiento juvenil del Partido Popular (PP, derecha) del presidente del gobierno español Mariano Rajoy, cumple su condena en España en régimen de semilibertad después de que Madrid llegase a un acuerdo con La Habana para repatriarlo.</p></DataContent>
+              </ContentItem>
+            </NewsComponent>
+                                    <NewsComponent>
+                                          <Role FormalName="HighDef"/>
+                            <ContentItem Href="photo_1362085737964-1-HD.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>84683</SizeInBytes>
+                  <Property FormalName="Width" Value="768"/>
+                  <Property FormalName="Height" Value="581"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                        <NewsComponent>
+                                                        <Role FormalName="Quicklook"/>
+                            <ContentItem Href="photo_1362085737964-1-1.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>14926</SizeInBytes>
+                  <Property FormalName="Width" Value="245"/>
+                  <Property FormalName="Height" Value="185"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                <NewsComponent>
+                                          <Role FormalName="Thumbnail"/>
+                            <ContentItem Href="photo_1362085737964-1-2.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>3737</SizeInBytes>
+                  <Property FormalName="Width" Value="110"/>
+                  <Property FormalName="Height" Value="80"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                                                          </NewsComponent>
+                                </NewsComponent>
+  </NewsItem>
+</NewsML>

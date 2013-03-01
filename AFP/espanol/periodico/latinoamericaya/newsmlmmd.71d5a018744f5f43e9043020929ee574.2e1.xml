@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NewsML Version="1.2">
+        <Catalog Href="http://www.afp.com/dtd/AFPCatalog.xml"/>
+  <NewsEnvelope>
+        <DateAndTime>20130301T141131Z</DateAndTime>
+        <Priority FormalName="4"/>
+      </NewsEnvelope>
+  <NewsItem>
+    <Identification>
+      <NewsIdentifier>
+	        	                <ProviderId>afp.com</ProviderId>
+	                <DateId>20130301</DateId>
+                <NewsItemId>CNG.71d5a018744f5f43e9043020929ee574.2e1</NewsItemId>
+        			        <RevisionId PreviousRevision="0" Update="N">1</RevisionId>
+                <PublicIdentifier>urn:newsml:afp.com:20130301:CNG.71d5a018744f5f43e9043020929ee574.2e1:1</PublicIdentifier>
+      </NewsIdentifier>
+                              <NameLabel>Uruguay-enseñanza-huelga</NameLabel>
+          </Identification>
+    <NewsManagement>
+      <NewsItemType FormalName="News"/>
+            <FirstCreated>20130301T134516Z</FirstCreated>
+            <ThisRevisionCreated>20130301T141129Z</ThisRevisionCreated>
+                        <Status FormalName="Usable"/>
+                </NewsManagement>
+    <NewsComponent>
+      <NewsLines>
+        <HeadLine>Con escuelas en obra y anuncios de huelga 350.000 niños inicaron cursos en Uruguay</HeadLine>
+                                                                                          <DateLine>MONTEVIDEO (AFP)</DateLine>
+                <CopyrightLine>© 2013 AFP</CopyrightLine>
+        <SlugLine>Uruguay-enseñanza-huelga</SlugLine>
+              </NewsLines>
+      <AdministrativeMetadata>
+        <Provider>
+	  <Party FormalName="afp.com" />
+        </Provider>
+                              </AdministrativeMetadata>
+      <DescriptiveMetadata>
+	<Language FormalName="es" />
+                <OfInterestTo FormalName="espanol--periodico--latinoamericaya"/>
+                                <Location HowPresent="Origin">
+                    <Property FormalName="Country" Value="URY"/>
+                              <Property FormalName="City" Value="Montevideo"/>
+                              <Property FormalName="Latitude" Value="-34.83346"/>
+                              <Property FormalName="Longitude" Value="-56.16735"/>
+                  </Location>
+                                                                        <SubjectCode>
+                                            <SubjectMatter FormalName="05010000"/>
+                                  </SubjectCode>
+                <SubjectCode>
+                                    <Subject FormalName="05000000"/>
+                                          </SubjectCode>
+                      </DescriptiveMetadata>
+                                                                                                                                <NewsComponent>
+        <ContentItem>
+          <MediaType FormalName="Text"/>
+          <Format FormalName="bcNITF2.5"/>
+          <DataContent><media media-type="image" style="leftSide"><media-reference data-location="#photo0" mime-type=""/></media><p>Más de 350.000 escolares comenzaron el viernes las clases en todo Uruguay, donde el sindicato de maestros ya anunció una huelga para el lunes, segundo día de cursos, en reclamo de incrementos salariales y mejores condiciones de los locales escolares.</p><p>Los maestros sindicalizados recibieron así a los padres de los alumnos luciendo una escarapela con la leyenda "condiciones de trabajo dignas para todos".</p><p>La secretaria general del sindicato de maestros, Raquel Bruschera, indicó que el principal reclamo es salarial.</p><p>"Un maestro de primer grado cobra menos de 14.000 pesos (unos USD 730) en la mano. Entendemos que siguen siendo salarios insuficientes, que traen aparejado que falten maestros", aseguró Bruschera a medios locales.</p><p>Cuestionó además la "inoperancia" de las autoridades por haber postergado para marzo el comienzo de obras en muchas escuelas.</p><p>Según el presidente del Consejo de Educación Primaria (CEIP), Héctor Florit, de los 2.448 locales de todo el país, en 200 escuelas hay obras comenzadas o planificadas. Solo dos escuelas postergaron el inicio de cursos a la semana próxima porque no están listas.</p><p>El presidente José Mujica criticó duramente esta semana a los sindicatos de la educación, pidiéndoles "parar un poquito con los reclamos".</p><p>"Antes de empezar este año ya nos estaban anunciando que iban a parar, porque esto y lo otro no servía... pará un poquito. ¿Por qué castigás a los chiquilines? Vení a patear al gobierno y rompernos todo lo que quieras, pero no dejes a los gurises en pelotas", dijo el miércoles Mujica a la publicación Correo Socialista.</p><p>"¿Cuál es el valor social? ¿Eso es conducta gremial? No me jodas", añadió.</p><p>En ese marco, padres y alumnos de una escuela del Cerro (oeste de Montevideo) se manifestaron en la mañana del viernes en una ruta de ingreso a Montevideo luego de que al arribar al local escolar descubrieran que en la noche éste había sido robado. Los ladrones se llevaron sillas, mesas, materiales de estudio, electrodomésticos y artefactos del baño, informó canal 10.</p></DataContent>
+        </ContentItem>
+      </NewsComponent>
+          
+                                      <NewsComponent Duid="photo0">
+            <NewsLines>
+                            <HeadLine>Niños en una escuela de Villa Cardal, Uruguay</HeadLine>
+                            <CreditLine>AFP/Archivo</CreditLine>
+                            <ByLine>Panta Astiazaran</ByLine>
+                                          <NewsLine>
+                <NewsLineType FormalName="AdvisoryLine" />
+                <NewsLineText>MORE IMAGES IN IMAGEFORUM</NewsLineText>
+              </NewsLine>
+                          </NewsLines>
+            <AdministrativeMetadata>
+              <Provider>
+                                <Party FormalName="afp.com" />
+                              </Provider>
+              <Creator>
+                <Party FormalName="Panta Astiazaran"/>
+              </Creator>
+                            <Source>
+                <Party FormalName="AFP"/>
+              </Source>
+            </AdministrativeMetadata>
+            <NewsComponent>
+                                                                                                  <Role FormalName="Caption"/>
+              <ContentItem>
+                <MediaType FormalName="Text"/>
+                <Format FormalName="bcNITF2.5"/>
+                <DataContent><p>Más de 350.000 escolares comenzaron el viernes las clases en todo Uruguay, donde el sindicato de maestros ya anunció una huelga para el lunes, segundo día de cursos, en reclamo de incrementos salariales y mejores condiciones de los locales escolares.</p></DataContent>
+              </ContentItem>
+            </NewsComponent>
+                                    <NewsComponent>
+                                          <Role FormalName="HighDef"/>
+                            <ContentItem Href="photo_1362147056815-1-HD.jpg">
+                <MediaType FormalName="Photo"/>
+                                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>89902</SizeInBytes>
+                  <Property FormalName="Width" Value="768"/>
+                  <Property FormalName="Height" Value="512"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                        <NewsComponent>
+                                                        <Role FormalName="Quicklook"/>
+                            <ContentItem Href="photo_1362147056815-1-1.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>12382</SizeInBytes>
+                  <Property FormalName="Width" Value="245"/>
+                  <Property FormalName="Height" Value="163"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                <NewsComponent>
+                                          <Role FormalName="Thumbnail"/>
+                            <ContentItem Href="photo_1362147056815-1-2.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>3664</SizeInBytes>
+                  <Property FormalName="Width" Value="110"/>
+                  <Property FormalName="Height" Value="73"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                                                          </NewsComponent>
+                                </NewsComponent>
+  </NewsItem>
+</NewsML>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NewsML Version="1.2">
+        <Catalog Href="http://www.afp.com/dtd/AFPCatalog.xml"/>
+  <NewsEnvelope>
+        <DateAndTime>20130228T182759Z</DateAndTime>
+        <Priority FormalName="4"/>
+      </NewsEnvelope>
+  <NewsItem>
+    <Identification>
+      <NewsIdentifier>
+	        	                <ProviderId>afp.com</ProviderId>
+	                <DateId>20130228</DateId>
+                <NewsItemId>CNG.208605c417b48910d25c9ab4f2cf28ba.1d1</NewsItemId>
+        			        <RevisionId PreviousRevision="2" Update="N">3</RevisionId>
+                <PublicIdentifier>urn:newsml:afp.com:20130228:CNG.208605c417b48910d25c9ab4f2cf28ba.1d1:3</PublicIdentifier>
+      </NewsIdentifier>
+                              <NameLabel>Argentina-Irán-magistratura-atentados-diplomacia-justicia</NameLabel>
+          </Identification>
+    <NewsManagement>
+      <NewsItemType FormalName="News"/>
+            <FirstCreated>20130227T162450Z</FirstCreated>
+            <ThisRevisionCreated>20130228T182756Z</ThisRevisionCreated>
+                        <Status FormalName="Usable"/>
+                </NewsManagement>
+    <NewsComponent>
+      <NewsLines>
+        <HeadLine>Congreso argentino aprueba acuerdo con Irán por atentado en AMIA</HeadLine>
+                                                                                          <DateLine>BUENOS AIRES (AFP)</DateLine>
+                <CopyrightLine>© 2013 AFP</CopyrightLine>
+        <SlugLine>Argentina-Irán-magistratura-atentados-diplomacia-justicia</SlugLine>
+              </NewsLines>
+      <AdministrativeMetadata>
+        <Provider>
+	  <Party FormalName="afp.com" />
+        </Provider>
+                              </AdministrativeMetadata>
+      <DescriptiveMetadata>
+	<Language FormalName="es" />
+                <OfInterestTo FormalName="espanol--periodico--latinoamericaya"/>
+                                <Location HowPresent="Origin">
+                    <Property FormalName="Country" Value="ARG"/>
+                              <Property FormalName="City" Value="Buenos Aires"/>
+                              <Property FormalName="Latitude" Value="-36"/>
+                              <Property FormalName="Longitude" Value="-60"/>
+                  </Location>
+                                                                        <SubjectCode>
+                                    <Subject FormalName="11000000"/>
+                                          </SubjectCode>
+                <SubjectCode>
+                                            <SubjectMatter FormalName="02007000"/>
+                                  </SubjectCode>
+                <SubjectCode>
+                                    <Subject FormalName="16000000"/>
+                                          </SubjectCode>
+                <SubjectCode>
+                                            <SubjectMatter FormalName="16001000"/>
+                                  </SubjectCode>
+                <SubjectCode>
+                                            <SubjectMatter FormalName="11002000"/>
+                                  </SubjectCode>
+                <SubjectCode>
+                                            <SubjectMatter FormalName="11014000"/>
+                                  </SubjectCode>
+                <SubjectCode>
+                                    <Subject FormalName="02000000"/>
+                                          </SubjectCode>
+                      </DescriptiveMetadata>
+                                                                                                                                <NewsComponent>
+        <ContentItem>
+          <MediaType FormalName="Text"/>
+          <Format FormalName="bcNITF2.5"/>
+          <DataContent><media media-type="image" style="leftSide"><media-reference data-location="#photo0" mime-type=""/></media><p>Los diputados argentinos convirtieron en ley, este jueves, un acuerdo con Irán propiciado por el Gobierno para interrogar a dirigentes iraníes acusados por el atentado contra la mutual judía AMIA en 1994, en el que murieron 85 personas y otras 300 resultaron heridas.</p><p>El bloque oficialista que responde a la presidenta Cristina Kirchner se impuso con 131 votos, en tanto que la oposición, con apoyo de entidades de la colectividad judía de Argentina que rechazan el acuerdo, sumó 113.</p><p>Buenos Aires y Teherán firmaron el 27 de enero pasado un Memorando para crear una Comisión de la Verdad, integrada por cinco miembros, ninguno de ellos iraní o argentino.</p><p>El Memorando bilateral establece la posibilidad de que los cinco juristas y el juez argentino de la causa puedan tomar declaración en Teherán a ocho imputados, entre ellos el actual ministro de Defensa, Ahmad Vahidi y el expresidente Alí Rafsanjani (1989-1997).</p><p>Tras la sanción de la ley, el presidente de la AMIA, Guillermo Borger, anunció que la entidad pedirá la nulidad del acuerdo ante la Corte Suprema.</p><p>"Estaremos presentando el planteo de nulidad de toda esta propuesta del memorandum y la creación de la Comisión de la Verdad ante la Corte Suprema de Justicia", reveló el dirigente.</p><p>Durante el debate en Diputados, centenares de miembros de la comunidad judeo-argentina, de 300.000 miembros, la mayor de América Latina, se concentraron ante el Congreso y levantaron carteles de protesta con la leyenda 'No'.</p><media media-type="image" style="rightSide"><media-reference data-location="#photo1" mime-type=""/></media><p>"¿Qué tipo de cooperación podemos tener con ese Estado? La bomba fue debatida por el gobierno de Irán, que ordenó ponerla", cuestionó el jefe del bloque de la primera oposición legislativa (UCR, socialdemócrata), Ricardo Gil Lavedra.</p><p>Estados Unidos se ha declarado "escéptico" de que se alcance una solución justa e Israel ha protestado por considerar impropia una negociación con Irán, país al que no considera fiable.</p><p>El Senado había dado luz verde al proyecto la semana pasada y aún falta que el parlamento iraní también lo apruebe.</p><p>"Es mejor interrogar que no poder interrogar a nadie. Sin indagatorias la causa no avanza", dijo en defensa del acuerdo el canciller Héctor Timerman en una audiencia previa de comisiones legislativas.</p><p>La investigación del ataque se estancó en 2006 cuando la justicia de Argentina acusó a ocho autoridades y líderes iraníes, entre ellos el excanciller Alí Akbar Velayati.</p><p>Sobre todos ellos pesa una orden de captura de Interpol con una alerta roja que Teherán se niega a reconocer.</p><p>"El Memorando no puede ser acompañado. Reconocemos el hecho para impulsar el esclarecimiento, pero las dudas siguen flotando", había criticado el presidente de la Delegación de Asociaciones Israelitas Argentinas (DAIA), Julio Schlosser, líder político de la comunidad.</p><media media-type="image" style="leftSide"><media-reference data-location="#photo2" mime-type=""/></media><p>El atentado, perpetrado el 18 de julio de 1994, destruyó el edificio de siete plantas de la AMIA, en el barrio de Once de la capital argentina.</p><p>Dos años antes, la embajada de Israel en Buenos Aires había sufrido otro atentado, que provocó 29 muertos y 200 heridos.</p><p>El presidente de la AMIA lamentó que "se avale un tratado con el estado teocrático de Irán y olvidar a los 85 muertos".</p><p>En cambio, la dirigente de la organización de familiares de víctimas Memoria Activa, Diana Malamud, dijo que "no se esperan grandes resultados, pero hay derecho a avanzar aunque sean pequeños pasitos".</p><p>Laura Ginsberg, líder de otra organización de los divididos familiares, la agrupación APEMIA, afirmó que "la comisión no va a traer la verdad que venimos buscando hace 19 años" y cuestionó a la fiscalía argentina.</p><p>"Todo lo que el fiscal (Alberto) Nisman hizo fueron inferencias. No sabemos si fueron los iraníes, los sirios, o los libaneses. Hay que esclarecer la conexión local del atentado y abrir los archivos secretos de inteligencia en Argentina", expresó Ginsberg.</p></DataContent>
+        </ContentItem>
+      </NewsComponent>
+          
+                                      <NewsComponent Duid="photo0">
+            <NewsLines>
+                            <HeadLine>Un miembro de la comunidad judía muestra un cartel que dice &quot;No&quot; el 27 de febrero fuera del Congreso, en Buenos Aires</HeadLine>
+                            <CreditLine>AFP</CreditLine>
+                            <ByLine>Juan Mabromata</ByLine>
+                                        </NewsLines>
+            <AdministrativeMetadata>
+              <Provider>
+                                <Party FormalName="afp.com" />
+                              </Provider>
+              <Creator>
+                <Party FormalName="Juan Mabromata"/>
+              </Creator>
+                            <Source>
+                <Party FormalName="AFP"/>
+              </Source>
+            </AdministrativeMetadata>
+            <NewsComponent>
+                                                                                                  <Role FormalName="Caption"/>
+              <ContentItem>
+                <MediaType FormalName="Text"/>
+                <Format FormalName="bcNITF2.5"/>
+                <DataContent><p>Los diputados argentinos convirtieron en ley este jueves un acuerdo con Irán propiciado por el Gobierno para interrogar a varios dirigentes iraníes acusados por el atentado contra la mutual judía AMIA, en el que murieron 85 personas y otras 300 resultaron heridas en 1994.</p></DataContent>
+              </ContentItem>
+            </NewsComponent>
+                                    <NewsComponent>
+                                          <Role FormalName="HighDef"/>
+                            <ContentItem Href="photo_1362041705517-2-HD.jpg">
+                <MediaType FormalName="Photo"/>
+                                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>62218</SizeInBytes>
+                  <Property FormalName="Width" Value="768"/>
+                  <Property FormalName="Height" Value="525"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                        <NewsComponent>
+                                                        <Role FormalName="Quicklook"/>
+                            <ContentItem Href="photo_1362041705517-2-1.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>10407</SizeInBytes>
+                  <Property FormalName="Width" Value="245"/>
+                  <Property FormalName="Height" Value="167"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                <NewsComponent>
+                                          <Role FormalName="Thumbnail"/>
+                            <ContentItem Href="photo_1362041705517-2-2.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>3342</SizeInBytes>
+                  <Property FormalName="Width" Value="110"/>
+                  <Property FormalName="Height" Value="75"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                                                          </NewsComponent>
+                                                    <NewsComponent Duid="photo1">
+            <NewsLines>
+                            <HeadLine>Vista general del Senado argentino, el 21 de febrero, durante la discusión sobre el acuerdo con Irán.</HeadLine>
+                            <CreditLine>AFP</CreditLine>
+                            <ByLine>Alejandro Pagni</ByLine>
+                                        </NewsLines>
+            <AdministrativeMetadata>
+              <Provider>
+                                <Party FormalName="afp.com" />
+                              </Provider>
+              <Creator>
+                <Party FormalName="Alejandro Pagni"/>
+              </Creator>
+                            <Source>
+                <Party FormalName="AFP"/>
+              </Source>
+            </AdministrativeMetadata>
+            <NewsComponent>
+                                                                                                  <Role FormalName="Caption"/>
+              <ContentItem>
+                <MediaType FormalName="Text"/>
+                <Format FormalName="bcNITF2.5"/>
+                <DataContent><p>Los diputados argentinos convirtieron en ley este jueves un acuerdo con Irán propiciado por el Gobierno para interrogar a varios dirigentes iraníes acusados por el atentado contra la mutual judía AMIA, en el que murieron 85 personas y otras 300 resultaron heridas en 1994.</p></DataContent>
+              </ContentItem>
+            </NewsComponent>
+                                    <NewsComponent>
+                                          <Role FormalName="HighDef"/>
+                            <ContentItem Href="photo_1361983498062-2-HD.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>121053</SizeInBytes>
+                  <Property FormalName="Width" Value="768"/>
+                  <Property FormalName="Height" Value="487"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                        <NewsComponent>
+                                                        <Role FormalName="Quicklook"/>
+                            <ContentItem Href="photo_1361983498062-2-1.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>16026</SizeInBytes>
+                  <Property FormalName="Width" Value="245"/>
+                  <Property FormalName="Height" Value="156"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                <NewsComponent>
+                                          <Role FormalName="Thumbnail"/>
+                            <ContentItem Href="photo_1361983498062-2-2.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>4483</SizeInBytes>
+                  <Property FormalName="Width" Value="110"/>
+                  <Property FormalName="Height" Value="70"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                                                          </NewsComponent>
+                                                    <NewsComponent Duid="photo2">
+            <NewsLines>
+                            <HeadLine>Un miembor de la comunidad judía de Argentina protesta en contra del acuerdo con Irán, el 27 de febrero de 2013.</HeadLine>
+                            <CreditLine>AFP</CreditLine>
+                            <ByLine>Juan Mabromata</ByLine>
+                                        </NewsLines>
+            <AdministrativeMetadata>
+              <Provider>
+                                <Party FormalName="afp.com" />
+                              </Provider>
+              <Creator>
+                <Party FormalName="Juan Mabromata"/>
+              </Creator>
+                            <Source>
+                <Party FormalName="AFP"/>
+              </Source>
+            </AdministrativeMetadata>
+            <NewsComponent>
+                                                                                                  <Role FormalName="Caption"/>
+              <ContentItem>
+                <MediaType FormalName="Text"/>
+                <Format FormalName="bcNITF2.5"/>
+                <DataContent><p>El atentado, perpetrado el 18 de julio de 1994, destruyó el edificio de siete plantas de la AMIA, en el barrio de Once de la capital argentina.</p></DataContent>
+              </ContentItem>
+            </NewsComponent>
+                                    <NewsComponent>
+                                          <Role FormalName="HighDef"/>
+                            <ContentItem Href="photo_1362066949941-2-HD.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>70266</SizeInBytes>
+                  <Property FormalName="Width" Value="768"/>
+                  <Property FormalName="Height" Value="543"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                        <NewsComponent>
+                                                        <Role FormalName="Quicklook"/>
+                            <ContentItem Href="photo_1362066949941-2-1.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>13867</SizeInBytes>
+                  <Property FormalName="Width" Value="245"/>
+                  <Property FormalName="Height" Value="173"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                <NewsComponent>
+                                          <Role FormalName="Thumbnail"/>
+                            <ContentItem Href="photo_1362066949941-2-2.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>4235</SizeInBytes>
+                  <Property FormalName="Width" Value="110"/>
+                  <Property FormalName="Height" Value="78"/>
+                </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                                                          </NewsComponent>
+                                </NewsComponent>
+  </NewsItem>
+</NewsML>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NewsML Version="1.2">
+  <Catalog Href="http://www.afp.com/dtd/AFPCatalog.xml"/>
+  <NewsEnvelope>
+        <DateAndTime>20130301T143306Z</DateAndTime>
+  </NewsEnvelope>
+  <NewsItem>
+    <Identification>
+      <NewsIdentifier>
+	                	                        <ProviderId>afp.com</ProviderId>
+                <DateId>20130301</DateId>
+                        <NewsItemId>espanol--periodico--latinoamericaya</NewsItemId>
+                <RevisionId PreviousRevision="0" Update="N">1</RevisionId>
+                <PublicIdentifier>urn:newsml:afp.com:20130301:espanol--periodico--latinoamericaya:1</PublicIdentifier>
+      </NewsIdentifier>
+            <NameLabel>Latino América Ya</NameLabel>
+    </Identification>
+    <NewsManagement>
+      <NewsItemType FormalName="News"/>
+      <FirstCreated>20130301T143306Z</FirstCreated>
+      <ThisRevisionCreated>20130301T143306Z</ThisRevisionCreated>
+      <Status FormalName="Usable"/>
+    </NewsManagement>
+    <NewsComponent>
+      <AdministrativeMetadata>
+        <Provider>
+          <Party FormalName="afp.com"/>
+        </Provider>
+      </AdministrativeMetadata>
+      <DescriptiveMetadata>
+        <Language FormalName="es"/>
+      </DescriptiveMetadata>
+                        <NewsComponent>
+        <NewsLines>
+          <HeadLine>Justicia chilena suspende proceso contra tres soldados bolivianos (oficial)</HeadLine>
+        </NewsLines>
+        <NewsItemRef NewsItem="newsmlmmd.71d5a018744f5f43e9043020929ee574.301.xml"/>
+      </NewsComponent>
+            <NewsComponent>
+        <NewsLines>
+          <HeadLine>Con escuelas en obra y anuncios de huelga 350.000 niños inicaron cursos en Uruguay</HeadLine>
+        </NewsLines>
+        <NewsItemRef NewsItem="newsmlmmd.71d5a018744f5f43e9043020929ee574.2e1.xml"/>
+      </NewsComponent>
+            <NewsComponent>
+        <NewsLines>
+          <HeadLine>Venezuela: Maduro afirma que Chávez sigue "batallando por su vida"</HeadLine>
+        </NewsLines>
+        <NewsItemRef NewsItem="newsmlmmd.170524d1f93c4ba02c99bbe2d251d34c.4c1.xml"/>
+      </NewsComponent>
+            <NewsComponent>
+        <NewsLines>
+          <HeadLine>Sistema penal en Brasil es blando y alienta impunidad, dice jefe de Corte Suprema</HeadLine>
+        </NewsLines>
+        <NewsItemRef NewsItem="newsmlmmd.170524d1f93c4ba02c99bbe2d251d34c.221.xml"/>
+      </NewsComponent>
+            <NewsComponent>
+        <NewsLines>
+          <HeadLine>Carromero asegura que la muerte de Payá no fue accidental, dice su hija</HeadLine>
+        </NewsLines>
+        <NewsItemRef NewsItem="newsmlmmd.d699e53dce0d4b07c448429bacd61b0c.671.xml"/>
+      </NewsComponent>
+            <NewsComponent>
+        <NewsLines>
+          <HeadLine>Congreso argentino aprueba acuerdo con Irán por atentado en AMIA</HeadLine>
+        </NewsLines>
+        <NewsItemRef NewsItem="newsmlmmd.208605c417b48910d25c9ab4f2cf28ba.1d1.xml"/>
+      </NewsComponent>
+            <NewsComponent>
+        <NewsLines>
+          <HeadLine>Fiscalía venezolana imputa a opositor López por "tráfico de influencias"</HeadLine>
+        </NewsLines>
+        <NewsItemRef NewsItem="newsmlmmd.b11adae2eeb50f9b7a0f99523a9b4e15.521.xml"/>
+      </NewsComponent>
+            <NewsComponent>
+        <NewsLines>
+          <HeadLine>Estudiantes siguen encadenados en Caracas "hasta saber la verdad" sobre Chávez</HeadLine>
+        </NewsLines>
+        <NewsItemRef NewsItem="newsmlmmd.b11adae2eeb50f9b7a0f99523a9b4e15.761.xml"/>
+      </NewsComponent>
+            <NewsComponent>
+        <NewsLines>
+          <HeadLine>Haití: exdictador Duvalier se presenta finalmente ante justicia</HeadLine>
+        </NewsLines>
+        <NewsItemRef NewsItem="newsmlmmd.b11adae2eeb50f9b7a0f99523a9b4e15.751.xml"/>
+      </NewsComponent>
+            <NewsComponent>
+        <NewsLines>
+          <HeadLine>El proceso de paz de Colombia entra en zona de turbulencias</HeadLine>
+        </NewsLines>
+        <NewsItemRef NewsItem="newsmlmmd.b11adae2eeb50f9b7a0f99523a9b4e15.881.xml"/>
+      </NewsComponent>
+                </NewsComponent>
+  </NewsItem>
+</NewsML>
