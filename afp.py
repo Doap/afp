@@ -1,64 +1,49 @@
 import argparse
 import os
 import redis
-from xml.dom import minidom
-from xml.dom.minidom import parseString
-from xml.dom.minidom import Node
+from defusedxml.minidom import parse
 import psycopg2
+import datetime
 
-def getChildrenByTitle(node):
-    for child in node.childNodes:
-		if child.localName=='HeadLine':
-			yield child
 
-		if child.localName=='DataContent':
-			yield child
+def get_filelist(path):
+    return [os.path.join(group[0], filename)
+        for  group in os.walk(path)
+        for filename in group[2]
+        if filename.endswith('.xml') and not filename == 'index.xml']
 
-		if child.localName=='NewsLines':
-			for ch in child.childNodes:
-				if ch.nodeName == 'HeadLine':
-					titulo =  ch.toxml().replace('<HeadLine>','').replace('</HeadLine>','')
-					print titulo
 
-		if child.localName=='ContentItem':
-			for ch in child.childNodes:
-				if ch.nodeName == 'DataContent':
-					contenido =  ch.toxml().replace('<DataContent>','').replace('</DataContent>','')
-					print contenido
 
-parser = argparse.ArgumentParser()
-parser.add_argument("path", help="directorio de archivos xml")
-args = parser.parse_args()
-directorio = args.path
+def process_news_file(file_path, rconn):
+    if rconn.sismember('news:files', file_path):
+        return
 
-r_server = redis.Redis("localhost")
-conn = psycopg2.connect("dbname=laprensa user=laprensa")
-cursor = conn.cursor()
+    if not rconn.hsetnx('news:lock', file_path, True):
+        return
 
-for (path, dirs, files) in os.walk(directorio):
-	print files
-	for filename in files:
-		if filename.endswith('.xml') and not filename.startswith('index'):
-			# si no esta en el set de noticias en redis
-			if not r_server.sismember("noticias", filename):
-				fullpath = os.path.join(path, filename)
-				with open(fullpath, 'r') as f:
-					read_data = f.read()
-					dom = parseString(read_data)
-					
-					for node in dom.getElementsByTagName('NewsComponent'):
-						alist = getChildrenByTitle(node)
+    with open(file_path, 'r') as news_file:
+        dom = parse(news_file)
 
-						for a in alist:
-							pass
-							
-						
-						#cursor.execute("INSERT INTO noticia VALUES (%s)", (xmlData,))
-						#conn.commit()
-				#r_server.sadd("noticias", filename)
-			else:
-				print 'ya existe esta noticia'
+    news_items = map(process_news_item, dom.getElementsByTagName('NewsItem'))
 
-cursor.close()
-conn.close()
+    rconn.hdel('news:lock', file_path)
+    rconn.sadd('news:files', file_path)
 
+def process_news_item(news_item):
+    print news_item
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument("path", help="directorio de archivos xml")
+    args = parser.parse_args()
+    directory = args.path
+
+    rconn = redis.Redis("localhost")
+
+    map(lambda file_path: process_news_file(file_path, rconn), get_filelist(directory))
+
+    conn = psycopg2.connect("dbname=laprensa user=laprensa")
+    cursor = conn.cursor()
+    cursor.close()
+    conn.close()
