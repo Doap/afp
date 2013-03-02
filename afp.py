@@ -6,9 +6,13 @@ import os
 import redis
 from defusedxml.minidom import parse
 import datetime
+import shutil
+from jinja2 import Template
+import functools
 
 parser = argparse.ArgumentParser()
 parser.add_argument("path", help="directorio de archivos xml")
+parser.add_argument("img_path", help="directorio de imagenes")
 args = parser.parse_args()
 
 def get_filelist(path):
@@ -16,8 +20,6 @@ def get_filelist(path):
         for  group in os.walk(path)
         for filename in group[2]
         if filename.endswith('.xml') and not filename == 'index.xml')
-
-
 
 def process_news_file(file_path):
     rconn = redis.Redis()
@@ -29,16 +31,15 @@ def process_news_file(file_path):
 
     with open(file_path, 'r') as news_file:
         dom = parse(news_file)
-
-    news_items = map(process_news_item, dom.getElementsByTagName('NewsItem'))
-
+    news_items = map(functools.partial(process_news_item,file_path=os.path.dirname(file_path)), dom.getElementsByTagName('NewsItem'))
     rconn.hdel('news:lock', file_path)
     rconn.sadd('news:files', file_path)
 
     return news_items
 
-def process_news_item(news_item):
+def process_news_item(news_item, file_path):
     data = {}
+    img_properties, img_ref = [], []
     for node in news_item.childNodes:
         if node.localName == 'Identification':
             date_elem = node.getElementsByTagName('DateId')[0]
@@ -66,8 +67,31 @@ def process_news_item(news_item):
                                         if 'ContentItem' in map(lambda x: x.localName, n.childNodes)  ][0]
 
             data['content'] = text_news_component_node.getElementsByTagName('DataContent')[0].toxml()
+            media = [n for n in text_news_component_node.getElementsByTagName('DataContent')[0].childNodes if n.localName == 'media']
+            img_properties = [ { 'foto':m.childNodes[0].getAttribute('data-location')[1:], 'style':m.getAttribute('style')} for m in media  ]
 
+            for node in news_component_nodes:
+                foto = node.getAttribute('Duid')
+                #obteniendo news component de cada media
+                news_components_media = [n for n in node.childNodes if n.localName == 'NewsComponent']
+                for t in news_components_media:
+                    #News components con definicion de archivos
+                    news_components_files = [n for n in t.childNodes if 'Role' in map(lambda x: x.localName, t.childNodes)]
 
+                    #Solamente imagenes medianas
+                    if news_components_files[1].getAttribute('FormalName') == 'Quicklook':
+                        #Nombre de la imagen
+                        img_quicklook = news_components_files[3].getAttribute('Href')
+                        #Moviendo archivo a carpeta media de laprensa
+                        shutil.copy2(os.path.join(file_path,img_quicklook), args.img_path)
+
+                        if img_quicklook:
+                            template = Template('<img src="{{ img_path }}{{img}}" alt="" />')
+                            render = template.render(img=img_quicklook, img_path=args.img_path)
+                            img_ref.append({ 'ref':render, 'foto':foto })
+
+            for x,y,z  in map(None,img_properties, img_ref, media):
+                data['content'] = data['content'].replace(z.toxml(), y['ref']).replace('<DataContent>','').replace('</DataContent>','')
 
     return data
 
