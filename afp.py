@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
+import futures
 import argparse
 import os
 import redis
@@ -74,4 +75,6 @@ def process_news_item(news_item):
 if __name__ == '__main__':
 
     import pprint
-    pprint.pprint(map(process_news_file, get_filelist(args.path)))
+    with futures.ProcessPoolExecutor() as executor:
+        for news_item in executor.map(process_news_file, get_filelist(args.path)):
+            pprint.pprint(news_item)
