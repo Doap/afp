@@ -78,6 +78,9 @@ def process_news_item(news_item, file_path):
                     #News components con definicion de archivos
                     news_components_files = [n for n in t.childNodes if 'Role' in map(lambda x: x.localName, t.childNodes)]
 
+                    if news_components_files[1].getAttribute('FormalName') == 'Caption':
+                        caption = news_components_files[3].getElementsByTagName('p')[0].toxml()
+
                     #Solamente imagenes medianas
                     if news_components_files[1].getAttribute('FormalName') == 'Quicklook':
                         #Nombre de la imagen
@@ -88,10 +91,16 @@ def process_news_item(news_item, file_path):
                         if img_quicklook:
                             template = Template('<img src="{{ img_path }}{{img}}" alt="" />')
                             render = template.render(img=img_quicklook, img_path=args.img_path)
-                            img_ref.append({ 'ref':render, 'foto':foto })
+                            img_ref.append({ 'ref':render, 'foto':foto, 'caption':caption })
 
             for x,y,z  in map(None,img_properties, img_ref, media):
-                data['content'] = data['content'].replace(z.toxml(), y['ref']).replace('<DataContent>','').replace('</DataContent>','')
+                left = Template('<div class="na-media na-image-left">{{ img }}<div class="info">{{ caption }}</div></div>')
+                right = Template('<div class="na-media na-image-right">{{ img }}<div class="info">{{ caption }}</div></div>')
+                if x['style'] == 'leftSide':
+                    render = left.render(img=y['ref'],caption=y['caption'])
+                if x['style'] == 'rightSide':
+                    render = right.render(img=y['ref'],caption=y['caption'])
+                data['content'] = data['content'].replace(z.toxml(), render).replace('<DataContent>','').replace('</DataContent>','')
 
     return data
 
