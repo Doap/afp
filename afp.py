@@ -89,7 +89,7 @@ def process_news_item(news_item, file_path):
                         shutil.copy2(os.path.join(file_path,img_quicklook), args.img_path)
 
                         if img_quicklook:
-                            template = Template('<img src="{{ img_path }}{{img}}" alt="" />')
+                            template = Template('<img src="/files/imagen/{{img}}" alt="" />')
                             render = template.render(img=img_quicklook, img_path=args.img_path)
                             img_ref.append({ 'ref':render, 'foto':foto, 'caption':caption })
 
@@ -106,8 +106,34 @@ def process_news_item(news_item, file_path):
 
 
 if __name__ == '__main__':
-
+    import psycopg2
     import pprint
+    conn = psycopg2.connect("dbname=laprensa user=laprensa password=laprensa")
+    cursor = conn.cursor()
+
     with futures.ProcessPoolExecutor() as executor:
         for news_item in executor.map(process_news_file, get_filelist(args.path)):
-            pprint.pprint(news_item)
+            if news_item is not None:
+		cursor.execute('''
+			select idedicion from edicion 
+			where edicion = DATE %(fecha)s 
+			order by edicion limit 1
+			''', {
+			 'fecha' : news_item[0]['date']
+			})
+		edicion = cursor.fetchone()
+		if edicion is not None:
+		    edicion = edicion[0]
+                cursor.execute('''
+                    INSERT INTO noticia (idedicion, idseccion, noticia, texto, creacion )
+                    VALUES ( %(edicion)s,  %(seccion)s, %(titulo)s, %(texto)s, %(fecha)s )
+                    ''',
+                    {	'seccion': 53,
+			'edicion': edicion,
+			'titulo' : news_item[0]['title'],
+			'texto' : news_item[0]['content'],
+			'fecha' : news_item[0]['date'],
+                    })
+                conn.commit()
+    cursor.close()
+    conn.close()
