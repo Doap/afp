@@ -93,14 +93,16 @@ def process_news_item(news_item, file_path):
                             render = template.render(img=img_quicklook, img_path=args.img_path)
                             img_ref.append({ 'ref':render, 'foto':foto, 'caption':caption })
 
-            for x,y,z  in map(None,img_properties, img_ref, media):
-                left = Template('<div class="na-media na-image-left">{{ img }}<div class="info">{{ caption }}</div></div>')
-                right = Template('<div class="na-media na-image-right">{{ img }}<div class="info">{{ caption }}</div></div>')
+            for x,y,z  in zip(img_properties, img_ref, media):
+                left = Template('<div style="text-align:center;" class="na-media na-image-left">{{ img }}<div class="info">{{ caption }}</div></div>')
+                right = Template('<div style="text-align:center;" class="na-media na-image-right">{{ img }}<div class="info">{{ caption }}</div></div>')
+                content = Template('<div><style>p{ padding: 5px; }</style>{{ contenido }}</div>')
                 if x['style'] == 'leftSide':
                     render = left.render(img=y['ref'],caption=y['caption'])
                 if x['style'] == 'rightSide':
                     render = right.render(img=y['ref'],caption=y['caption'])
                 data['content'] = data['content'].replace(z.toxml(), render).replace('<DataContent>','').replace('</DataContent>','')
+		data['content'] = content.render(contenido=data['content'])
 
     return data
 
