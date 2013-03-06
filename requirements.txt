@@ -2,3 +2,4 @@ redis
 psycopg2
 defusedxml
 futures
+jinja2

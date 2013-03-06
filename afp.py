@@ -89,25 +89,54 @@ def process_news_item(news_item, file_path):
                         shutil.copy2(os.path.join(file_path,img_quicklook), args.img_path)
 
                         if img_quicklook:
-                            template = Template('<img src="{{ img_path }}{{img}}" alt="" />')
+                            template = Template('<img src="/files/imagen/{{img}}" alt="" />')
                             render = template.render(img=img_quicklook, img_path=args.img_path)
                             img_ref.append({ 'ref':render, 'foto':foto, 'caption':caption })
 
-            for x,y,z  in map(None,img_properties, img_ref, media):
-                left = Template('<div class="na-media na-image-left">{{ img }}<div class="info">{{ caption }}</div></div>')
-                right = Template('<div class="na-media na-image-right">{{ img }}<div class="info">{{ caption }}</div></div>')
+            for x,y,z  in zip(img_properties, img_ref, media):
+                left = Template('<div style="text-align:center;" class="na-media na-image-left">{{ img }}<div class="info">{{ caption }}</div></div>')
+                right = Template('<div style="text-align:center;" class="na-media na-image-right">{{ img }}<div class="info">{{ caption }}</div></div>')
+                content = Template('<div><style>p{ padding: 5px; }</style>{{ contenido }}</div>')
                 if x['style'] == 'leftSide':
                     render = left.render(img=y['ref'],caption=y['caption'])
                 if x['style'] == 'rightSide':
                     render = right.render(img=y['ref'],caption=y['caption'])
                 data['content'] = data['content'].replace(z.toxml(), render).replace('<DataContent>','').replace('</DataContent>','')
+		data['content'] = content.render(contenido=data['content'])
 
     return data
 
 
 if __name__ == '__main__':
+    import psycopg2
+    import datetime
+    conn = psycopg2.connect("dbname=laprensa user=laprensa password=laprensa")
+    cursor = conn.cursor()
 
-    import pprint
     with futures.ProcessPoolExecutor() as executor:
         for news_item in executor.map(process_news_file, get_filelist(args.path)):
-            pprint.pprint(news_item)
+            if news_item is not None:
+		if news_item[0]['date'].date() == datetime.date.today():
+		    cursor.execute('''
+			    select idedicion from edicion 
+			    where edicion = DATE %(fecha)s 
+			    order by edicion limit 1
+			    ''', {
+			     'fecha' : news_item[0]['date']
+			    })
+		    edicion = cursor.fetchone()
+		    if edicion is not None:
+			edicion = edicion[0]
+		    cursor.execute('''
+			INSERT INTO noticia (idedicion, idseccion, noticia, texto, creacion, destacado, ubicacion )
+			VALUES ( %(edicion)s,  %(seccion)s, %(titulo)s, %(texto)s, %(fecha)s, 't', 'I' )
+			''',
+			{	'seccion': 53,
+			    'edicion': edicion,
+			    'titulo' : news_item[0]['title'],
+			    'texto' : news_item[0]['content'],
+			    'fecha' : news_item[0]['date'],
+			})
+		    conn.commit()
+    cursor.close()
+    conn.close()
