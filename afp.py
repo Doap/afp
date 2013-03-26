@@ -110,7 +110,7 @@ def process_news_item(news_item, file_path):
 if __name__ == '__main__':
     import psycopg2
     import datetime
-    conn = psycopg2.connect("dbname=laprensa user=laprensa password=Blade-mobile8Occupy")
+    conn = psycopg2.connect("dbname=laprensa user=laprensa password=laprensa")
     cursor = conn.cursor()
 
     with futures.ProcessPoolExecutor() as executor:
