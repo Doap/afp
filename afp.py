@@ -96,7 +96,7 @@ def process_news_item(news_item, file_path):
             for x,y,z  in zip(img_properties, img_ref, media):
                 left = Template('<div style="text-align:center;" class="na-media na-image-left">{{ img }}<div class="info">{{ caption }}</div></div>')
                 right = Template('<div style="text-align:center;" class="na-media na-image-right">{{ img }}<div class="info">{{ caption }}</div></div>')
-                content = Template('<div><style>p{ padding: 5px; }</style>{{ contenido }}</div>')
+                content = Template('<div>{{contenido}}<style>p{ padding: 5px; }</style></div>')
                 if x['style'] == 'leftSide':
                     render = left.render(img=y['ref'],caption=y['caption'])
                 if x['style'] == 'rightSide':
@@ -110,13 +110,14 @@ def process_news_item(news_item, file_path):
 if __name__ == '__main__':
     import psycopg2
     import datetime
-    conn = psycopg2.connect("dbname=laprensa user=laprensa password=laprensa")
+    conn = psycopg2.connect("dbname=laprensa user=laprensa password=Blade-mobile8Occupy")
     cursor = conn.cursor()
 
     with futures.ProcessPoolExecutor() as executor:
         for news_item in executor.map(process_news_file, get_filelist(args.path)):
             if news_item is not None:
 		if news_item[0]['date'].date() == datetime.date.today():
+		    print news_item[0]['title']
 		    cursor.execute('''
 			    select idedicion from edicion 
 			    where edicion = DATE %(fecha)s 
