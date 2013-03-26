@@ -116,28 +116,34 @@ if __name__ == '__main__':
     with futures.ProcessPoolExecutor() as executor:
         for news_item in executor.map(process_news_file, get_filelist(args.path)):
             if news_item is not None:
-		if news_item[0]['date'].date() == datetime.date.today():
-		    print news_item[0]['title']
-		    cursor.execute('''
-			    select idedicion from edicion 
-			    where edicion = DATE %(fecha)s 
-			    order by edicion limit 1
-			    ''', {
-			     'fecha' : news_item[0]['date']
+		rconn = redis.Redis()
+		if rconn.sismember('titles:title', news_item[0]['title']):
+		    pass
+		else:
+		    if news_item[0]['date'].date() == datetime.date.today():
+			print news_item[0]['title']
+			cursor.execute('''
+				select idedicion from edicion 
+				where edicion = DATE %(fecha)s 
+				order by edicion limit 1
+				''', {
+				 'fecha' : news_item[0]['date']
+				})
+			edicion = cursor.fetchone()
+			if edicion is not None:
+			    edicion = edicion[0]
+			cursor.execute('''
+			    INSERT INTO noticia (idedicion, idseccion, noticia, texto, creacion, destacado, ubicacion, orden )
+			    VALUES ( %(edicion)s,  %(seccion)s, %(titulo)s, %(texto)s, %(fecha)s, 't', 'I', 101 )
+			    ''',
+			    {	'seccion': 53,
+				'edicion': edicion,
+				'titulo' : news_item[0]['title'],
+				'texto' : news_item[0]['content'],
+				'fecha' : news_item[0]['date'],
 			    })
-		    edicion = cursor.fetchone()
-		    if edicion is not None:
-			edicion = edicion[0]
-		    cursor.execute('''
-			INSERT INTO noticia (idedicion, idseccion, noticia, texto, creacion, destacado, ubicacion )
-			VALUES ( %(edicion)s,  %(seccion)s, %(titulo)s, %(texto)s, %(fecha)s, 't', 'I' )
-			''',
-			{	'seccion': 53,
-			    'edicion': edicion,
-			    'titulo' : news_item[0]['title'],
-			    'texto' : news_item[0]['content'],
-			    'fecha' : news_item[0]['date'],
-			})
-		    conn.commit()
+			conn.commit()
+			rconn.hdel('titles:lock', news_item[0]['title'])
+			rconn.sadd('titles:title', news_item[0]['title'])
     cursor.close()
     conn.close()
