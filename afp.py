@@ -41,9 +41,13 @@ def process_news_item(news_item, file_path):
     data = {}
     img_properties, img_ref = [], []
     for node in news_item.childNodes:
-        if node.localName == 'Identification':
-            date_elem = node.getElementsByTagName('DateId')[0]
-            data['date'] = datetime.datetime.strptime(date_elem.firstChild.nodeValue, '%Y%m%d')
+	if node.localName == 'NewsManagement':
+            date_elem = node.getElementsByTagName('FirstCreated')[0]
+            data['date'] = datetime.datetime.strptime(date_elem.firstChild.nodeValue, '%Y%m%dT%H%M%SZ')
+
+        #if node.localName == 'Identification':
+        #    date_elem = node.getElementsByTagName('DateId')[0]
+        #    data['date'] = datetime.datetime.strptime(date_elem.firstChild.nodeValue, '%Y%m%d')
 
         if node.localName == 'NewsComponent':
             # Trabajando en obtener el titulo y el slug
@@ -120,30 +124,29 @@ if __name__ == '__main__':
 		if rconn.sismember('titles:title', news_item[0]['title']):
 		    pass
 		else:
-		    #if news_item[0]['date'].date() == datetime.date.today():
-		    print news_item[0]['title']
-		    cursor.execute('''
-			    select idedicion from edicion 
-			    where edicion = DATE %(fecha)s 
-			    order by edicion limit 1
-			    ''', {
-			     'fecha' : news_item[0]['date']
+		    if news_item[0]['date'].date() == datetime.date.today():
+			cursor.execute('''
+				select idedicion from edicion 
+				where edicion = DATE %(fecha)s 
+				order by edicion limit 1
+				''', {
+				 'fecha' : news_item[0]['date']
+				})
+			edicion = cursor.fetchone()
+			if edicion is not None:
+			    edicion = edicion[0]
+			cursor.execute('''
+			    INSERT INTO noticia (idedicion, idseccion, noticia, texto, creacion, destacado, ubicacion, orden, antetitulo )
+			    VALUES ( %(edicion)s,  %(seccion)s, %(titulo)s, %(texto)s, %(fecha)s, 't', 'I', 101, 'AFP' )
+			    ''',
+			    {	'seccion': 53,
+				'edicion': edicion,
+				'titulo' : news_item[0]['title'],
+				'texto' : news_item[0]['content'],
+				'fecha' : news_item[0]['date'],
 			    })
-		    edicion = cursor.fetchone()
-		    if edicion is not None:
-			edicion = edicion[0]
-		    cursor.execute('''
-			INSERT INTO noticia (idedicion, idseccion, noticia, texto, creacion, destacado, ubicacion, orden, antetitulo )
-			VALUES ( %(edicion)s,  %(seccion)s, %(titulo)s, %(texto)s, %(fecha)s, 't', 'I', 101, 'AFP' )
-			''',
-			{	'seccion': 53,
-			    'edicion': edicion,
-			    'titulo' : news_item[0]['title'],
-			    'texto' : news_item[0]['content'],
-			    'fecha' : news_item[0]['date'],
-			})
-		    conn.commit()
-		    rconn.hdel('titles:lock', news_item[0]['title'])
-		    rconn.sadd('titles:title', news_item[0]['title'])
+			conn.commit()
+			rconn.hdel('titles:lock', news_item[0]['title'])
+			rconn.sadd('titles:title', news_item[0]['title'])
     cursor.close()
     conn.close()
