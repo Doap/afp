@@ -1,53 +1,73 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-import futures
-import argparse
+
 import os
-import redis
-from defusedxml.minidom import parse
+import argparse
 import datetime
 import shutil
-from jinja2 import Template
 import functools
+import itertools
+import hashlib
+
+import futures
+import redis
+from defusedxml.minidom import parse
+import jinja2
+import psycopg2
 
 parser = argparse.ArgumentParser()
 parser.add_argument("path", help="directorio de archivos xml")
 parser.add_argument("img_path", help="directorio de imagenes")
 args = parser.parse_args()
 
-def get_filelist(path):
-    return (os.path.join(group[0], filename)
-        for  group in os.walk(path)
-        for filename in group[2]
-        if filename.endswith('.xml') and not filename == 'index.xml')
 
-def process_news_file(file_path):
-    rconn = redis.Redis()
-    if rconn.sismember('news:files', file_path):
-        return
+def get_file_sha1(filepath):
+    with open(filepath, 'r') as f:
+        return hashlib.sha1(f.read()).hexdigest()
 
+def get_filelist(path, rconn):
+    for index_path in (os.path.join(group[0], filename)
+         for  group in os.walk(path)
+         for filename in group[2]
+         if filename == 'index.xml'):
+        path_hash = hashlib.sha1(index_path).hexdigest()
+        file_hash = get_file_sha1(index_path)
+        directory_path = os.path.dirname(index_path)
+        if rconn.hget('afp:file_index', path_hash) != file_hash:
+            with open(index_path, 'r') as index_file:
+                index_dom = parse(index_file)
+                for node in index_dom.getElementsByTagName('NewsItemRef'):
+                    yield os.path.join(directory_path, node.getAttribute('NewsItem'))
+
+            rconn.hset('afp:file_index', path_hash, file_hash)
+
+def process_news_file(file_path, rconn):
     if not rconn.hsetnx('news:lock', file_path, True):
-        return
+        return ()
 
-    with open(file_path, 'r') as news_file:
-        dom = parse(news_file)
-    news_items = map(functools.partial(process_news_item,file_path=os.path.dirname(file_path)), dom.getElementsByTagName('NewsItem'))
+    with open(file_path, 'r') as file_object:
+        dom = parse(file_object)
+
+    result = itertools.imap(functools.partial(process_news_item, file_path=file_path), dom.getElementsByTagName('NewsItem'))
     rconn.hdel('news:lock', file_path)
-    rconn.sadd('news:files', file_path)
 
-    return news_items
+    return result
 
 def process_news_item(news_item, file_path):
+    directory = os.path.dirname(file_path)
     data = {}
-    img_properties, img_ref = [], []
+    img_properties_list, img_ref_list = [], []
     for node in news_item.childNodes:
 	if node.localName == 'NewsManagement':
             date_elem = node.getElementsByTagName('FirstCreated')[0]
             data['date'] = datetime.datetime.strptime(date_elem.firstChild.nodeValue, '%Y%m%dT%H%M%SZ')
 
-        #if node.localName == 'Identification':
-        #    date_elem = node.getElementsByTagName('DateId')[0]
-        #    data['date'] = datetime.datetime.strptime(date_elem.firstChild.nodeValue, '%Y%m%d')
+        if node.localName == 'Identification':
+            ident_elem = node.getElementsByTagName('NewsItemId')[0]
+            data['news_item_id'] = ident_elem.firstChild.nodeValue
+
+            revision_elem = node.getElementsByTagName('RevisionId')[0]
+            data['revision'] = int(revision_elem.firstChild.nodeValue)
 
         if node.localName == 'NewsComponent':
             # Trabajando en obtener el titulo y el slug
@@ -71,8 +91,8 @@ def process_news_item(news_item, file_path):
                                         if 'ContentItem' in map(lambda x: x.localName, n.childNodes)  ][0]
 
             data['content'] = text_news_component_node.getElementsByTagName('DataContent')[0].toxml()
-            media = [n for n in text_news_component_node.getElementsByTagName('DataContent')[0].childNodes if n.localName == 'media']
-            img_properties = [ { 'foto':m.childNodes[0].getAttribute('data-location')[1:], 'style':m.getAttribute('style')} for m in media  ]
+            media_list = [n for n in text_news_component_node.getElementsByTagName('DataContent')[0].childNodes if n.localName == 'media']
+            img_properties_list = [ { 'foto':m.childNodes[0].getAttribute('data-location')[1:], 'style':m.getAttribute('style')} for m in media_list]
 
             for node in news_component_nodes:
                 foto = node.getAttribute('Duid')
@@ -90,63 +110,103 @@ def process_news_item(news_item, file_path):
                         #Nombre de la imagen
                         img_quicklook = news_components_files[3].getAttribute('Href')
                         #Moviendo archivo a carpeta media de laprensa
-                        shutil.copy2(os.path.join(file_path,img_quicklook), args.img_path)
+                        shutil.copy2(os.path.join(directory, img_quicklook), args.img_path)
 
                         if img_quicklook:
-                            template = Template('<img width="310" src="http://www.laprensa.com.ni/files/imagen/{{img}}" alt="" />')
+                            template = jinja2.Template('<img width="310" src="http://www.laprensa.com.ni/files/imagen/{{img}}" alt="" />')
                             render = template.render(img=img_quicklook, img_path=args.img_path)
-                            img_ref.append({ 'ref':render, 'foto':foto, 'caption':caption })
+                            img_ref_list.append({ 'ref':render, 'foto':foto, 'caption':caption })
 
-            for x,y,z  in zip(img_properties, img_ref, media):
-                left = Template('<div style="text-align:center;" class="na-media na-image-left">{{ img }}<div class="info">{{ caption }}</div></div>')
-                right = Template('<div style="text-align:center;" class="na-media na-image-right">{{ img }}<div class="info">{{ caption }}</div></div>')
-                content = Template('<div>{{contenido}}<style>p{ padding: 5px; }</style></div>')
-                if x['style'] == 'leftSide':
-                    render = left.render(img=y['ref'],caption=y['caption'])
-                if x['style'] == 'rightSide':
-                    render = right.render(img=y['ref'],caption=y['caption'])
-                data['content'] = data['content'].replace(z.toxml(), render).replace('<DataContent>','').replace('</DataContent>','')
+            for img_properties, img_ref, media  in zip(img_properties_list, img_ref_list, media_list):
+                left = jinja2.Template('<div style="text-align:center;" class="na-media na-image-left">{{ img }}<div class="info">{{ caption }}</div></div>')
+                right = jinja2.Template('<div style="text-align:center;" class="na-media na-image-right">{{ img }}<div class="info">{{ caption }}</div></div>')
+                content = jinja2.Template('<div>{{contenido}}<style>p{ padding: 5px; }</style></div>')
+                if img_properties['style'] == 'leftSide':
+                    render = left.render(img=img_ref['ref'], caption=img_ref['caption'])
+                if img_properties['style'] == 'rightSide':
+                    render = right.render(img=img_ref['ref'],caption=img_ref['caption'])
+                data['content'] = data['content'].replace(media.toxml(), render).replace('<DataContent>','').replace('</DataContent>','')
 		data['content'] = content.render(contenido=data['content'])
 
     return data
 
+def get_edition(date, cursor):
+    cursor.execute('''
+    select idedicion from edicion
+    where edicion = DATE %(fecha)s
+    order by edicion limit 1
+    ''', {
+        'fecha' : date
+    })
+    edicion = cursor.fetchone()
+    if edicion is not None:
+        edicion = edicion[0]
+
+    return edicion
+
+def process_news_data(news_data, rconn, pgconn):
+    cursor = pgconn.cursor()
+    if not news_data['date'].date() == datetime.date.today():
+        return
+
+    edition = get_edition(news_data['date'].date(), cursor)
+    if edition is None:
+        return
+
+    news_id = rconn.hget('afp:news:list', news_data['news_item_id'])
+    print news_id
+    if  news_id is not None:
+        revision = news_data['revision']
+        if revision > int(rconn.hget('afp:news:revisions', news_data['news_item_id'])):
+            cursor.execute('''
+            UPDATE noticia SET
+            idedicion=%(edicion)s, 
+            idseccion=%(seccion)s,
+            noticia=%(noticia)s,
+            texto=%(texto)s,
+            fecha=%(fecha)s
+            WHERE idnoticia=%(news_id)s
+            ''', {
+            'seccion': 53,
+            'edicion': edition,
+            'titulo' : news_data['title'],
+            'texto' : news_data['content'],
+            'fecha' : news_data['date'],
+            'news_id': news_id
+            })
+            rconn.hset('afp:news:revisions', news_data['news_item_id'], news_data['revision'])
+            return 'UPDATE {0}'.format(news_id)
+    else:
+       cursor.execute('''
+       INSERT INTO noticia (idedicion, idseccion, noticia, texto, creacion, destacado, ubicacion, orden, antetitulo )
+       VALUES ( %(edicion)s,  %(seccion)s, %(titulo)s, %(texto)s, %(fecha)s, 't', 'I', 101, 'AFP' )
+       RETURNING idnoticia
+       ''', {
+        'seccion': 53,
+        'edicion': edition,
+        'titulo' : news_data['title'],
+        'texto' : news_data['content'],
+        'fecha' : news_data['date'],
+       })
+       news_id = cursor.fetchone()[0]
+       rconn.hset('afp:news:list', news_data['news_item_id'], news_id)
+       rconn.hset('afp:news:revisions', news_data['news_item_id'], news_data['revision'])
+
+       return 'INSERT {0}'.format(news_id)
+
+
 
 if __name__ == '__main__':
-    import psycopg2
-    import datetime
-    conn = psycopg2.connect("dbname=laprensa user=laprensa password=laprensa")
-    cursor = conn.cursor()
+    rconn = redis.Redis()
+    pgconn = psycopg2.connect("dbname=laprensa user=laprensa password=Blade-mobile8Occupy")
+    file_path_list = get_filelist(args.path, rconn)
 
-    with futures.ProcessPoolExecutor() as executor:
-        for news_item in executor.map(process_news_file, get_filelist(args.path)):
-            if news_item is not None:
-		rconn = redis.Redis()
-		if rconn.sismember('titles:title', news_item[0]['title']):
-		    pass
-		else:
-		    if news_item[0]['date'].date() == datetime.date.today():
-			cursor.execute('''
-				select idedicion from edicion 
-				where edicion = DATE %(fecha)s 
-				order by edicion limit 1
-				''', {
-				 'fecha' : news_item[0]['date']
-				})
-			edicion = cursor.fetchone()
-			if edicion is not None:
-			    edicion = edicion[0]
-			cursor.execute('''
-			    INSERT INTO noticia (idedicion, idseccion, noticia, texto, creacion, destacado, ubicacion, orden, antetitulo )
-			    VALUES ( %(edicion)s,  %(seccion)s, %(titulo)s, %(texto)s, %(fecha)s, 't', 'I', 101, 'AFP' )
-			    ''',
-			    {	'seccion': 53,
-				'edicion': edicion,
-				'titulo' : news_item[0]['title'],
-				'texto' : news_item[0]['content'],
-				'fecha' : news_item[0]['date'],
-			    })
-			conn.commit()
-			rconn.hdel('titles:lock', news_item[0]['title'])
-			rconn.sadd('titles:title', news_item[0]['title'])
-    cursor.close()
-    conn.close()
+    print map(
+    functools.partial(process_news_data, rconn=rconn, pgconn=pgconn),
+    (
+    news for news_list in
+    itertools.imap(functools.partial(process_news_file, rconn=rconn), file_path_list)
+    for news in news_list
+    ))
+
+    pgconn.commit()
