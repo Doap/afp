@@ -159,15 +159,11 @@ def process_news_data(news_data, rconn, pgconn):
         if revision > int(rconn.hget('afp:news:revisions', news_data['news_item_id'])):
             cursor.execute('''
             UPDATE noticia SET
-            idedicion=%(edicion)s, 
-            idseccion=%(seccion)s,
             noticia=%(titulo)s,
             texto=%(texto)s,
             creacion=%(fecha)s
             WHERE idnoticia=%(news_id)s
             ''', {
-            'seccion': 53,
-            'edicion': edition,
             'titulo' : news_data['title'],
             'texto' : news_data['content'],
             'fecha' : news_data['date'],
