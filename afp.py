@@ -58,9 +58,9 @@ def process_news_item(news_item, file_path):
     data = {}
     img_properties_list, img_ref_list = [], []
     for node in news_item.childNodes:
-	if node.localName == 'NewsManagement':
-            date_elem = node.getElementsByTagName('FirstCreated')[0]
-            data['date'] = datetime.datetime.strptime(date_elem.firstChild.nodeValue, '%Y%m%dT%H%M%SZ')
+        if node.localName == 'NewsManagement':
+                date_elem = node.getElementsByTagName('FirstCreated')[0]
+                data['date'] = datetime.datetime.strptime(date_elem.firstChild.nodeValue, '%Y%m%dT%H%M%SZ')
 
         if node.localName == 'Identification':
             ident_elem = node.getElementsByTagName('NewsItemId')[0]
@@ -126,7 +126,7 @@ def process_news_item(news_item, file_path):
                 if img_properties['style'] == 'rightSide':
                     render = right.render(img=img_ref['ref'],caption=img_ref['caption'])
                 data['content'] = data['content'].replace(media.toxml(), render).replace('<DataContent>','').replace('</DataContent>','')
-		data['content'] = content.render(contenido=data['content'])
+                data['content'] = content.render(contenido=data['content'])
 
     return data
 
@@ -174,7 +174,7 @@ def process_news_data(news_data, rconn, pgconn):
     else:
        cursor.execute('''
        INSERT INTO noticia (idedicion, idseccion, noticia, texto, creacion, destacado, ubicacion, orden, antetitulo )
-       VALUES ( %(edicion)s,  %(seccion)s, %(titulo)s, %(texto)s, %(fecha)s, 't', 'I', 101, 'AFP' )
+       VALUES ( %(edicion)s,  %(seccion)s, %(titulo)s, %(texto)s, %(fecha)s, %(destacado)s, %(ubicacion)s, 101, 'AFP' )
        RETURNING idnoticia
        ''', {
         'seccion': 53,
@@ -182,6 +182,8 @@ def process_news_data(news_data, rconn, pgconn):
         'titulo' : news_data['title'],
         'texto' : news_data['content'],
         'fecha' : news_data['date'],
+        'ubicacion': 'D', 
+        'destacado': 't',
        })
        news_id = cursor.fetchone()[0]
        rconn.hset('afp:news:list', news_data['news_item_id'], news_id)
