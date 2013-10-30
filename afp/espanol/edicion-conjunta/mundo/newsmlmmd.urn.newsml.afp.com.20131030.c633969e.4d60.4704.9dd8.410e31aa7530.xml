@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NewsML Version="1.2">
+        <Catalog Href="http://www.afp.com/dtd/AFPCatalog.xml"/>
+  <NewsEnvelope>
+        <DateAndTime>20131030T121226Z</DateAndTime>
+        <Priority FormalName="4"/>
+      </NewsEnvelope>
+  <NewsItem>
+    <Identification>
+      <NewsIdentifier>
+	        	                <ProviderId>afp.com</ProviderId>
+	                <DateId>20131030</DateId>
+                <NewsItemId>c633969e-4d60-4704-9dd8-410e31aa7530</NewsItemId>
+        			        <RevisionId PreviousRevision="0" Update="N">1</RevisionId>
+                <PublicIdentifier>urn:newsml:afp.com:20131030:c633969e-4d60-4704-9dd8-410e31aa7530:1</PublicIdentifier>
+      </NewsIdentifier>
+                              <NameLabel>Chile-elecciones</NameLabel>
+          </Identification>
+    <NewsManagement>
+      <NewsItemType FormalName="News"/>
+            <FirstCreated>20131030T121138Z</FirstCreated>
+            <ThisRevisionCreated>20131030T121138Z</ThisRevisionCreated>
+                        <Status FormalName="Usable"/>
+                </NewsManagement>
+    <NewsComponent>
+      <NewsLines>
+        	<HeadLine>Bachelet ganará las elecciones chilenas en la primera vuelta, según un sondeo</HeadLine>
+                                                  <DateLine>Santiago (AFP)</DateLine>
+                <CopyrightLine>© 2013 AFP</CopyrightLine>
+        <SlugLine>Chile-elecciones</SlugLine>
+              </NewsLines>
+      <AdministrativeMetadata>
+        <Provider>
+	  <Party FormalName="afp.com" />
+        </Provider>
+                              </AdministrativeMetadata>
+      <DescriptiveMetadata>
+	<Language FormalName="es" />
+                <OfInterestTo FormalName="espanol--edicion-conjunta--mundo"/>
+                                <Location HowPresent="Origin">
+                    <Property FormalName="Country" Value="CHL"/>
+                              <Property FormalName="City" Value="Santiago"/>
+                              <Property FormalName="Latitude" Value="-33.45694"/>
+                              <Property FormalName="Longitude" Value="-70.64827"/>
+                  </Location>
+                                                                        <SubjectCode>
+                                            <SubjectMatter FormalName="11003000"/>
+                                  </SubjectCode>
+                <SubjectCode>
+                                    <Subject FormalName="11000000"/>
+                                          </SubjectCode>
+                      </DescriptiveMetadata>
+                                                                                                              <NewsComponent>
+        <ContentItem>
+          <MediaType FormalName="Text"/>
+          <Format FormalName="bcNITF2.5"/>
+          <DataContent><media media-type="image" style="leftSide"><media-reference data-location="#photo0" mime-type=""/></media><p>Los nueve candidatos a las elecciones presidenciales de Chile participaron el martes por la noche en un debate que estuvo marcado por un sondeo que da como ganadora en la primera vuelta a la exmandataria y candidata socialista Michelle Bachelet.</p><p>Los nueve postulantes, número inédito para una elección presidencial chilena, participaron en el debate que se realiza en dos jornadas, organizado por los canales de televisión locales, en el que fueron interrogados sobre temas de seguridad, educación y salud durante más de dos horas y media retrasmitidas íntegramente en directo.</p><p>Horas antes de arrancar el debate, fue difundido el esperado sondeo de intención de voto del Centro de Estudios Públicos (CEP), el cual dio un 47% de respaldo a Bachelet para las elecciones del próximo 17 de noviembre, proclamándola ganadora en la primera vuelta, tema que fue comentado por los candidatos.</p><p>"Estamos pensando en ganar en primera vuelta el próximo 17 de noviembre", dijo Bachelet en medio de su intervención en la que defendió su propuesta de realizar una reforma educacional, tributaria y una nueva Constitución.</p><media media-type="image" style="rightSide"><media-reference data-location="#photo1" mime-type=""/></media><p>Su principal rival, la candidata de la derecha gobernante, Evelyn Matthei, desestimó que Bachelet logre ganar en primera vuelta y afirmó que llegará a la segunda vuelta para competir con la exmandataria. La encuesta "se equivoca siempre por ocho o diez puntos", afirmó Matthei, quien desea mantener la línea de libre mercado del actual mandatario derechista Sebastián Piñera.</p><p>El debate también se caracterizó por las críticas que la expresidenta Bachelet (2006-2010) recibió de sus contrincantes, especialmente del candidato Marco Enríquez Ominami, el cineasta que se desligó del Partido Socialista, que apoya a Bachelet, y es ahora candidato del Partido Progresista. “No vote por Michelle Bachelet, ya fuimos gobernados con la ideología del freno de mano", dijo Enríquez Ominami.</p><p>Por su parte, el economista independiente Franco Parisi, tercero en los sondeos, prometió disminuir la brecha laboral entre hombres y mujeres, y se defendió sobre una denuncia judicial en su contra de apropiarse de unos 1,6 millones de dólares por impago de cotizaciones a trabajadores de una sociedad de la que formó parte junto a su hermano para administrar dos colegios.</p><p> </p></DataContent>
+        </ContentItem>
+      </NewsComponent>
+          
+                                      <NewsComponent Duid="photo0">
+            <NewsLines>
+                            <HeadLine>Michelle Bachelet y Evelyn Matthei, en el debate organizado el 29 de octubre de 2013 en Santiago de Chile entre los candidatos a las elecciones presidenciales.</HeadLine>
+                            <CreditLine>AFP</CreditLine>
+                            <ByLine>Martín Bernetti</ByLine>
+                                        </NewsLines>
+            <AdministrativeMetadata>
+              <Provider>
+                                <Party FormalName="afp.com" />
+                              </Provider>
+              <Creator>
+                <Party FormalName="Martín Bernetti"/>
+              </Creator>
+                            <Source>
+                <Party FormalName="AFP"/>
+              </Source>
+            </AdministrativeMetadata>
+            <NewsComponent>
+                                                                                                  <Role FormalName="Caption"/>
+              <ContentItem>
+                <MediaType FormalName="Text"/>
+                <Format FormalName="bcNITF2.5"/>
+                <DataContent><p>Michelle Bachelet y Evelyn Matthei, en el debate organizado el 29 de octubre de 2013 en Santiago de Chile entre los candidatos a las elecciones presidenciales.</p></DataContent>
+              </ContentItem>
+            </NewsComponent>
+                                    <NewsComponent>
+                                          <Role FormalName="HighDef"/>
+                            <ContentItem Href="de58ee33ef3cfa1706214867834b75f6e9d92605.jpg">
+                <MediaType FormalName="Photo"/>
+                                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>36542</SizeInBytes>
+                                    <Property FormalName="Width" Value="768"/>
+                                                      <Property FormalName="Height" Value="503"/>
+                                  </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                        <NewsComponent>
+                                                        <Role FormalName="Quicklook"/>
+                            <ContentItem Href="f52b021516becb6778affb0bbbc46d8050c577ad.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>6890</SizeInBytes>
+                                    <Property FormalName="Width" Value="244"/>
+                                                      <Property FormalName="Height" Value="160"/>
+                                  </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                <NewsComponent>
+                                          <Role FormalName="Thumbnail"/>
+                            <ContentItem Href="3c278f466f42a9f7954633b8cca7b6d4fc9f3c35.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>2575</SizeInBytes>
+                                    <Property FormalName="Width" Value="110"/>
+                                                      <Property FormalName="Height" Value="72"/>
+                                  </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                                                          </NewsComponent>
+                                                    <NewsComponent Duid="photo1">
+            <NewsLines>
+                            <HeadLine>Los nueve postulantes a la presidencia chilena que participaron en el debate organizado por las televisones locales el 29 de octubre de 2013 en Santiago de Chile</HeadLine>
+                            <CreditLine>AFP</CreditLine>
+                            <ByLine>Martin Barnetti</ByLine>
+                                        </NewsLines>
+            <AdministrativeMetadata>
+              <Provider>
+                                <Party FormalName="afp.com" />
+                              </Provider>
+              <Creator>
+                <Party FormalName="Martin Barnetti"/>
+              </Creator>
+                            <Source>
+                <Party FormalName="AFP"/>
+              </Source>
+            </AdministrativeMetadata>
+            <NewsComponent>
+                                                                                                  <Role FormalName="Caption"/>
+              <ContentItem>
+                <MediaType FormalName="Text"/>
+                <Format FormalName="bcNITF2.5"/>
+                <DataContent><p>Los nueve postulantes a la presidencia chilena que participaron en el debate organizado por las televisones locales el 29 de octubre de 2013 en Santiago de Chile</p></DataContent>
+              </ContentItem>
+            </NewsComponent>
+                                    <NewsComponent>
+                                          <Role FormalName="HighDef"/>
+                            <ContentItem Href="3a98bfb711bd986007d83665959c2de83a22851d.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>51867</SizeInBytes>
+                                    <Property FormalName="Width" Value="767"/>
+                                                      <Property FormalName="Height" Value="412"/>
+                                  </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                        <NewsComponent>
+                                                        <Role FormalName="Quicklook"/>
+                            <ContentItem Href="1f4ab7ec735495846d34af3a6fcc6bb8c041f525.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>10043</SizeInBytes>
+                                    <Property FormalName="Width" Value="245"/>
+                                                      <Property FormalName="Height" Value="132"/>
+                                  </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                <NewsComponent>
+                                          <Role FormalName="Thumbnail"/>
+                            <ContentItem Href="596fcb76539824d7a2ec7b77ece375964524271e.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>3298</SizeInBytes>
+                                    <Property FormalName="Width" Value="110"/>
+                                                      <Property FormalName="Height" Value="59"/>
+                                  </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                                                          </NewsComponent>
+                                </NewsComponent>
+  </NewsItem>
+</NewsML>

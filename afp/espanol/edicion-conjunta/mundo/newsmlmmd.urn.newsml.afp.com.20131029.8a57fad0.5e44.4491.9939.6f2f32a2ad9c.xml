@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NewsML Version="1.2">
+        <Catalog Href="http://www.afp.com/dtd/AFPCatalog.xml"/>
+  <NewsEnvelope>
+        <DateAndTime>20131029T224324Z</DateAndTime>
+        <Priority FormalName="4"/>
+      </NewsEnvelope>
+  <NewsItem>
+    <Identification>
+      <NewsIdentifier>
+	        	                <ProviderId>afp.com</ProviderId>
+	                <DateId>20131029</DateId>
+                <NewsItemId>8a57fad0-5e44-4491-9939-6f2f32a2ad9c</NewsItemId>
+        			        <RevisionId PreviousRevision="1" Update="N">2</RevisionId>
+                <PublicIdentifier>urn:newsml:afp.com:20131029:8a57fad0-5e44-4491-9939-6f2f32a2ad9c:2</PublicIdentifier>
+      </NewsIdentifier>
+                              <NameLabel>AIEA-Irán-política-nuclear</NameLabel>
+          </Identification>
+    <NewsManagement>
+      <NewsItemType FormalName="News"/>
+            <FirstCreated>20131029T162903Z</FirstCreated>
+            <ThisRevisionCreated>20131029T162903Z</ThisRevisionCreated>
+                        <Status FormalName="Usable"/>
+                </NewsManagement>
+    <NewsComponent>
+      <NewsLines>
+        	<HeadLine>&quot;Muy productiva&quot; reunión entre AIE e Irán, que volverán a verse el 11 de noviembre</HeadLine>
+                                                  <DateLine>Viena (AFP)</DateLine>
+                <CopyrightLine>© 2013 AFP</CopyrightLine>
+        <SlugLine>AIEA-Irán-política-nuclear</SlugLine>
+              </NewsLines>
+      <AdministrativeMetadata>
+        <Provider>
+	  <Party FormalName="afp.com" />
+        </Provider>
+                              </AdministrativeMetadata>
+      <DescriptiveMetadata>
+	<Language FormalName="es" />
+                <OfInterestTo FormalName="espanol--edicion-conjunta--mundo"/>
+                                <Location HowPresent="Origin">
+                    <Property FormalName="Country" Value="AUT"/>
+                              <Property FormalName="City" Value="Viena"/>
+                              <Property FormalName="Latitude" Value="48.20849"/>
+                              <Property FormalName="Longitude" Value="16.37208"/>
+                  </Location>
+                                                                        <SubjectCode>
+                                            <SubjectMatter FormalName="11020000"/>
+                                  </SubjectCode>
+                <SubjectCode>
+                                                    <SubjectDetail FormalName="04005005"/>
+                          </SubjectCode>
+                <SubjectCode>
+                                            <SubjectMatter FormalName="11002000"/>
+                                  </SubjectCode>
+                <SubjectCode>
+                                            <SubjectMatter FormalName="04005000"/>
+                                  </SubjectCode>
+                <SubjectCode>
+                                            <SubjectMatter FormalName="11014000"/>
+                                  </SubjectCode>
+                <SubjectCode>
+                                    <Subject FormalName="04000000"/>
+                                          </SubjectCode>
+                <SubjectCode>
+                                    <Subject FormalName="04000000"/>
+                                          </SubjectCode>
+                <SubjectCode>
+                                    <Subject FormalName="11000000"/>
+                                          </SubjectCode>
+                <SubjectCode>
+                                            <SubjectMatter FormalName="11006000"/>
+                                  </SubjectCode>
+                      </DescriptiveMetadata>
+                                                                                                              <NewsComponent>
+        <ContentItem>
+          <MediaType FormalName="Text"/>
+          <Format FormalName="bcNITF2.5"/>
+          <DataContent><media media-type="image" style="leftSide"><media-reference data-location="#photo0" mime-type=""/></media><p>El encuentro entre la Agencia Internacional de Energía Atómica (AIEA) e Irán, el lunes y este martes en Viena, permitió registrar avances en el tema del programa nuclear de la República Islámica, lo que podría facilitar las próximas negociaciones.</p><p>La reunión en la sede de la AIEA fue "muy productiva", declararon en un comunicado conjunto el nuevo jefe de los inspectores de la AIEA, el finlandés Tero Varjoranta, y el embajador de Irán en la AIEA, Reza Najafi, al finalizar el encuentro. "Tras discusiones sustanciales, se decidió que una nueva reunión tendrá lugar el 11 de noviembre en Teherán para seguir con esta cooperación", añadieron ambas partes.</p><p>Los países occidentales piden a Irán que facilite a la agencia ejercer una vigilancia creciente en sus actividades nucleares, de las que sospechan tienen una finalidad militar, lo que Irán desmiente categóricamente.</p><p>Irán presentó una nueva propuesta en Viena, tildada de "constructiva" por el organismo internacional, y que tiene como objetivo "reforzar la cooperación y el diálogo en vista de la futura resolución de todos los temas pendientes", según la declaración común. Tras haber pasado por un período de estancamiento, la AIEA e Irán parecen haber adoptado un nuevo tono tras la llegada al poder del presidente del país, el moderado Hasan Rohani, en agosto pasado.</p><p>"Creo que con esta nueva propuesta, se abre un nuevo capítulo de cooperación" entre la AIEA e Irán, dijo Najafi. "El objetivo final será la resolución de todos los temas pendientes", añadió.</p><p>El lunes, el jefe de las negociaciones del lado iraní, el viceministro de Asuntos Extranjeros, Abas Araghshi, se entrevistó con el director general de la AIEA, el japonés Yukiya Amano, y se pronunció a favor de un "nuevo enfoque" en las relaciones con la agencia.</p><p>A finales de septiembre, Hasan Rohani mantuvo una conversación telefónica con el mandatario estadounidense, Barack Obama, una novedad desde la Revolución islámica de 1979. Además, los jefes de la diplomacia de ambos países, Mohamad Javad Zarif, y John Kerry, se entrevistaron durante la Asamblea General de las Naciones Unidas.</p><p>El encuentro en Viena del lunes y este martes fue la 12ª reunión de ese tipo entre la AIEA y los negociadores iraníes, y la segunda con el nuevo equipo de diplomáticos nombrados por Rohani.</p><p>Aunque los diez primeros encuentros entre inicios de 2012 y mayo de 2013 no condujeron a avances importantes, la última hasta ahora, el 27 de septiembre, fue considerada "muy constructiva" por la agencia. Un avance en las negociaciones con la agencia de la ONU parece esencial para que se levanten las sanciones contra Teherán, que afectan duramente la economía del país.</p><p>Otra reunión de expertos iraníes y de potencias del '5+1' (los cinco miembros permanentes del Consejo de seguridad de la ONU -EEUU, Rusia, China, Francia, Gran Bretaña- y Alemania) está prevista para el miércoles y jueves.</p><p>Estas negociaciones en Viena programadas esta semana deben hacer posible preparar la reunión de Ginebra entre los '5+1' e Irán, prevista para los días 7 y 8 de noviembre.</p></DataContent>
+        </ContentItem>
+      </NewsComponent>
+          
+                                      <NewsComponent Duid="photo0">
+            <NewsLines>
+                            <HeadLine>El embajador iraní ante la Agencia Internacional de la Energía Atómica (AIEA), Reja Najafi (izda), y el inspector jefe de la AIEA, Tero Varjoranta, atienden a la prensa tras su reunión en Viena, este martes 29 de octubre.</HeadLine>
+                            <CreditLine>AFP</CreditLine>
+                            <ByLine>Dieter Nagl</ByLine>
+                                        </NewsLines>
+            <AdministrativeMetadata>
+              <Provider>
+                                <Party FormalName="afp.com" />
+                              </Provider>
+              <Creator>
+                <Party FormalName="Dieter Nagl"/>
+              </Creator>
+                            <Source>
+                <Party FormalName="AFP"/>
+              </Source>
+            </AdministrativeMetadata>
+            <NewsComponent>
+                                                                                                  <Role FormalName="Caption"/>
+              <ContentItem>
+                <MediaType FormalName="Text"/>
+                <Format FormalName="bcNITF2.5"/>
+                <DataContent><p>El embajador iraní ante la Agencia Internacional de la Energía Atómica (AIEA), Reja Najafi (izda), y el inspector jefe de la AIEA, Tero Varjoranta, atienden a la prensa tras su reunión en Viena, este martes 29 de octubre.</p></DataContent>
+              </ContentItem>
+            </NewsComponent>
+                                    <NewsComponent>
+                                          <Role FormalName="HighDef"/>
+                            <ContentItem Href="1ac807c5a1fa06c6c35213b914d2f955bf67f182.jpg">
+                <MediaType FormalName="Photo"/>
+                                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>52165</SizeInBytes>
+                                    <Property FormalName="Width" Value="768"/>
+                                                      <Property FormalName="Height" Value="519"/>
+                                  </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                        <NewsComponent>
+                                                        <Role FormalName="Quicklook"/>
+                            <ContentItem Href="c4228aecb7764c43c84c1fac47ccb03972bd2da6.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>11006</SizeInBytes>
+                                    <Property FormalName="Width" Value="245"/>
+                                                      <Property FormalName="Height" Value="166"/>
+                                  </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                <NewsComponent>
+                                          <Role FormalName="Thumbnail"/>
+                            <ContentItem Href="b1a316135aa1d6d43a89ff6abf095777827fe537.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>3534</SizeInBytes>
+                                    <Property FormalName="Width" Value="109"/>
+                                                      <Property FormalName="Height" Value="74"/>
+                                  </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                                                          </NewsComponent>
+                                </NewsComponent>
+  </NewsItem>
+</NewsML>

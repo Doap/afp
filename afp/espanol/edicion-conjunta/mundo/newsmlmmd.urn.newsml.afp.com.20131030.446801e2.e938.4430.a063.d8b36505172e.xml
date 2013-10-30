@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NewsML Version="1.2">
+        <Catalog Href="http://www.afp.com/dtd/AFPCatalog.xml"/>
+  <NewsEnvelope>
+        <DateAndTime>20131030T104610Z</DateAndTime>
+        <Priority FormalName="4"/>
+      </NewsEnvelope>
+  <NewsItem>
+    <Identification>
+      <NewsIdentifier>
+	        	                <ProviderId>afp.com</ProviderId>
+	                <DateId>20131030</DateId>
+                <NewsItemId>446801e2-e938-4430-a063-d8b36505172e</NewsItemId>
+        			        <RevisionId PreviousRevision="0" Update="N">1</RevisionId>
+                <PublicIdentifier>urn:newsml:afp.com:20131030:446801e2-e938-4430-a063-d8b36505172e:1</PublicIdentifier>
+      </NewsIdentifier>
+                              <NameLabel>India-transporte-accidente</NameLabel>
+          </Identification>
+    <NewsManagement>
+      <NewsItemType FormalName="News"/>
+            <FirstCreated>20131030T104544Z</FirstCreated>
+            <ThisRevisionCreated>20131030T104544Z</ThisRevisionCreated>
+                        <Status FormalName="Usable"/>
+                </NewsManagement>
+    <NewsComponent>
+      <NewsLines>
+        	<HeadLine>45 muertos por un accidente de autobús al sur de la India</HeadLine>
+                                                  <DateLine>Nueva Delhi (AFP)</DateLine>
+                <CopyrightLine>© 2013 AFP</CopyrightLine>
+        <SlugLine>India-transporte-accidente</SlugLine>
+              </NewsLines>
+      <AdministrativeMetadata>
+        <Provider>
+	  <Party FormalName="afp.com" />
+        </Provider>
+                              </AdministrativeMetadata>
+      <DescriptiveMetadata>
+	<Language FormalName="es" />
+                <OfInterestTo FormalName="espanol--edicion-conjunta--mundo"/>
+                                <Location HowPresent="Origin">
+                    <Property FormalName="Country" Value="IND"/>
+                              <Property FormalName="City" Value="Nueva Delhi"/>
+                              <Property FormalName="Latitude" Value="28.63576"/>
+                              <Property FormalName="Longitude" Value="77.22445"/>
+                  </Location>
+                                                                        <SubjectCode>
+                                            <SubjectMatter FormalName="03010000"/>
+                                  </SubjectCode>
+                <SubjectCode>
+                                            <SubjectMatter FormalName="03013000"/>
+                                  </SubjectCode>
+                <SubjectCode>
+                                    <Subject FormalName="03000000"/>
+                                          </SubjectCode>
+                      </DescriptiveMetadata>
+                                                                                                              <NewsComponent>
+        <ContentItem>
+          <MediaType FormalName="Text"/>
+          <Format FormalName="bcNITF2.5"/>
+          <DataContent><media media-type="image" style="leftSide"><media-reference data-location="#photo0" mime-type=""/></media><p>Un violento incendio a bordo de un autobús, provocado por la explosión del depósito tras un choque, mató a 45 personas este miércoles por la mañana en el sur de India, anunció la policía.</p><p>Sólo cinco de los 49 pasajeros, entre ellos el conductor y el responsable de la limpieza del autobús, consiguieron romper vidrios y salir del vehículo antes de que fuera arrasado por las llamas.</p><p>"El número total de cadáveres hallados, incluyendo el de un niño pequeño, es de 45", dijo a la AFP un alto funcionario de la administración, L. Sarman.</p><p>"El conductor iba a 120 ó 130 km/h. Llevaba conduciendo toda la noche, parece que se quedó dormido al volante", añadió Sarman.</p><p>El incendio se produjo después de que el autocar chocara con el terraplén de una autopista entre Bangalore e Hyderabad a primera hora de la mañana, puntualizó un portavoz de la policía, Venkateshwarlu. </p><p>"El chófer y el limpiador intentaron darse a la fuga, pero fueron capturados por la policía y se encuentran detenidos para ser interrogados", añadió Venkateshwarlu.</p><media media-type="image" style="rightSide"><media-reference data-location="#photo1" mime-type=""/></media><p>En 2011, 131.834 personas fallecieron en la India en accidentes de carretera, según estadísticas oficiales. El mal estado de la red de carreteras, la velocidad y la conducción peligrosa explican la mayoría de los accidentes. </p><p>El trabajo de los chóferes de vehículos comerciales suele no estar reglamentado, por lo cual a veces conducen durante muchas horas por la noche, con el consiguiente riesgo de quedarse dormidos al volante.</p><p>La policía acudió a la oficina de la compañía de Jabbar Travels, que ofrece viajes interurbanos en autobús en el sur de India, para interrogar a sus dueños. Los familiares de las víctimas, que se hallaban frente a esa oficina, en Hyderabad, a 140 kilómetros del lugar del accidente, se pusieron a gritar y a llorar.</p><p>"La principal razón del accidente es que el autobús estaba excediendo el límite de velocidad y chocó contra la mediana de la carretera", declaró a The Times of India un dirigente regional, Girija Shankar.</p><p>Según el periódico, al menos cinco de las víctimas eran ingenieros de sistemas que regresaban a su tierra para festejar la Diwali, la tradicional fiesta hindú de las luces. Hyderabad y Bangalore son importantes centros de tecnología informática.</p><p>El número de muertos de este miércoles resulta elevado, incluso en relación con las víctimas que dejan habitualmente los accidentes de este tipo que se registran en India. En mayo, 33 personas perecieron en el accidente de un autobús repleto que se salió de la carretera y cayó a un río en el norte de India.</p></DataContent>
+        </ContentItem>
+      </NewsComponent>
+          
+                                      <NewsComponent Duid="photo0">
+            <NewsLines>
+                            <HeadLine>Una familiar de alguno de los 45 muertos en el accidente de autobús al sur de India llora ante la oficina de la empresa de transportes, este miércoles en la ciudad de Hyderabad.</HeadLine>
+                            <CreditLine>AFP</CreditLine>
+                            <ByLine>Noah Silam</ByLine>
+                                        </NewsLines>
+            <AdministrativeMetadata>
+              <Provider>
+                                <Party FormalName="afp.com" />
+                              </Provider>
+              <Creator>
+                <Party FormalName="Noah Silam"/>
+              </Creator>
+                            <Source>
+                <Party FormalName="AFP"/>
+              </Source>
+            </AdministrativeMetadata>
+            <NewsComponent>
+                                                                                                  <Role FormalName="Caption"/>
+              <ContentItem>
+                <MediaType FormalName="Text"/>
+                <Format FormalName="bcNITF2.5"/>
+                <DataContent><p>Una familiar de alguno de los 45 muertos en el accidente de autobús al sur de India llora ante la oficina de la empresa de transportes, este miércoles en la ciudad de Hyderabad.</p></DataContent>
+              </ContentItem>
+            </NewsComponent>
+                                    <NewsComponent>
+                                          <Role FormalName="HighDef"/>
+                            <ContentItem Href="10fe6a0d89fdea3cd26a08358f2685e6b82c71e6.jpg">
+                <MediaType FormalName="Photo"/>
+                                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>50226</SizeInBytes>
+                                    <Property FormalName="Width" Value="768"/>
+                                                      <Property FormalName="Height" Value="512"/>
+                                  </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                        <NewsComponent>
+                                                        <Role FormalName="Quicklook"/>
+                            <ContentItem Href="6bb17107d25399b13495707d9a562cc9b442a867.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>9666</SizeInBytes>
+                                    <Property FormalName="Width" Value="245"/>
+                                                      <Property FormalName="Height" Value="163"/>
+                                  </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                <NewsComponent>
+                                          <Role FormalName="Thumbnail"/>
+                            <ContentItem Href="8d890fd10b296d76443bec4aacb06c1b87e5ccf3.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>3197</SizeInBytes>
+                                    <Property FormalName="Width" Value="110"/>
+                                                      <Property FormalName="Height" Value="73"/>
+                                  </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                                                          </NewsComponent>
+                                                    <NewsComponent Duid="photo1">
+            <NewsLines>
+                            <HeadLine>Policías y allegados de las víctimas se congregan ante la oficina de la empresa de transporte Jabbar Travels, tras conocerse el accidente de autobús en que murieron 45 personas, este miércoles en la ciudad de Hyderabad, al sur de India.</HeadLine>
+                            <CreditLine>AFP</CreditLine>
+                            <ByLine>Noah Silam</ByLine>
+                                        </NewsLines>
+            <AdministrativeMetadata>
+              <Provider>
+                                <Party FormalName="afp.com" />
+                              </Provider>
+              <Creator>
+                <Party FormalName="Noah Silam"/>
+              </Creator>
+                            <Source>
+                <Party FormalName="AFP"/>
+              </Source>
+            </AdministrativeMetadata>
+            <NewsComponent>
+                                                                                                  <Role FormalName="Caption"/>
+              <ContentItem>
+                <MediaType FormalName="Text"/>
+                <Format FormalName="bcNITF2.5"/>
+                <DataContent><p>Policías y allegados de las víctimas se congregan ante la oficina de la empresa de transporte Jabbar Travels, tras conocerse el accidente de autobús en que murieron 45 personas, este miércoles en la ciudad de Hyderabad, al sur de India.</p></DataContent>
+              </ContentItem>
+            </NewsComponent>
+                                    <NewsComponent>
+                                          <Role FormalName="HighDef"/>
+                            <ContentItem Href="c9a10170098e0849b8221f6209226a4d1cd39f1b.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>92613</SizeInBytes>
+                                    <Property FormalName="Width" Value="576"/>
+                                                      <Property FormalName="Height" Value="768"/>
+                                  </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                        <NewsComponent>
+                                                        <Role FormalName="Quicklook"/>
+                            <ContentItem Href="9671ba9a6342ad0545291535064d307b7fcff077.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>13756</SizeInBytes>
+                                    <Property FormalName="Width" Value="184"/>
+                                                      <Property FormalName="Height" Value="245"/>
+                                  </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                <NewsComponent>
+                                          <Role FormalName="Thumbnail"/>
+                            <ContentItem Href="97b5c2e7216d6e8dd269eaf3e75b4e0871c25776.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>3476</SizeInBytes>
+                                    <Property FormalName="Width" Value="75"/>
+                                                      <Property FormalName="Height" Value="100"/>
+                                  </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                                                          </NewsComponent>
+                                </NewsComponent>
+  </NewsItem>
+</NewsML>

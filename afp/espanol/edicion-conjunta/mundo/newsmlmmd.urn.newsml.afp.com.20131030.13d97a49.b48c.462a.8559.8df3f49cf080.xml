@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NewsML Version="1.2">
+        <Catalog Href="http://www.afp.com/dtd/AFPCatalog.xml"/>
+  <NewsEnvelope>
+        <DateAndTime>20131030T085124Z</DateAndTime>
+        <Priority FormalName="4"/>
+      </NewsEnvelope>
+  <NewsItem>
+    <Identification>
+      <NewsIdentifier>
+	        	                <ProviderId>afp.com</ProviderId>
+	                <DateId>20131030</DateId>
+                <NewsItemId>13d97a49-b48c-462a-8559-8df3f49cf080</NewsItemId>
+        			        <RevisionId PreviousRevision="0" Update="N">1</RevisionId>
+                <PublicIdentifier>urn:newsml:afp.com:20131030:13d97a49-b48c-462a-8559-8df3f49cf080:1</PublicIdentifier>
+      </NewsIdentifier>
+                              <NameLabel>Siria-conflicto-diplomacia</NameLabel>
+          </Identification>
+    <NewsManagement>
+      <NewsItemType FormalName="News"/>
+            <FirstCreated>20131030T085054Z</FirstCreated>
+            <ThisRevisionCreated>20131030T085054Z</ThisRevisionCreated>
+                        <Status FormalName="Usable"/>
+                </NewsManagement>
+    <NewsComponent>
+      <NewsLines>
+        	<HeadLine>Brahimi se reunirá con Bashar al Asad este miércoles por la mañana</HeadLine>
+                                                  <DateLine>Damasco (AFP)</DateLine>
+                <CopyrightLine>© 2013 AFP</CopyrightLine>
+        <SlugLine>Siria-conflicto-diplomacia</SlugLine>
+              </NewsLines>
+      <AdministrativeMetadata>
+        <Provider>
+	  <Party FormalName="afp.com" />
+        </Provider>
+                              </AdministrativeMetadata>
+      <DescriptiveMetadata>
+	<Language FormalName="es" />
+                <OfInterestTo FormalName="espanol--edicion-conjunta--mundo"/>
+                                <Location HowPresent="Origin">
+                    <Property FormalName="Country" Value="SYR"/>
+                              <Property FormalName="City" Value="Damasco"/>
+                              <Property FormalName="Latitude" Value="33.5102"/>
+                              <Property FormalName="Longitude" Value="36.29128"/>
+                  </Location>
+                                                                        <SubjectCode>
+                                    <Subject FormalName="16000000"/>
+                                          </SubjectCode>
+                      </DescriptiveMetadata>
+                                                                                                              <NewsComponent>
+        <ContentItem>
+          <MediaType FormalName="Text"/>
+          <Format FormalName="bcNITF2.5"/>
+          <DataContent><media media-type="image" style="leftSide"><media-reference data-location="#photo0" mime-type=""/></media><p>El emisario especial de la ONU y la Liga Árabe para Siria, Lajdar Brahimi, se reunirá este miércoles por la mañana en Damasco con el presidente sirio, Bashar al Asad, informó una fuente diplomática.</p><p>Brahimi llegó el pasado lunes por la noche a Damasco para preparar una conferencia de paz que se espera tenga lugar en Ginebra (Suiza) a finales de noviembre.</p><p> </p></DataContent>
+        </ContentItem>
+      </NewsComponent>
+          
+                                      <NewsComponent Duid="photo0">
+            <NewsLines>
+                            <HeadLine>Lajdar Brahimi, mediador internacional para Siria, es recibido por el viceministro de Exteriores sirio Faisal Moqdad (izq), el pasado lunes 28 de octubre a su llegada a Damasco.</HeadLine>
+                            <CreditLine>AFP/Archivos</CreditLine>
+                            <ByLine>Luai Beshara</ByLine>
+                                        </NewsLines>
+            <AdministrativeMetadata>
+              <Provider>
+                                <Party FormalName="afp.com" />
+                              </Provider>
+              <Creator>
+                <Party FormalName="Luai Beshara"/>
+              </Creator>
+                            <Source>
+                <Party FormalName="AFP"/>
+              </Source>
+            </AdministrativeMetadata>
+            <NewsComponent>
+                                                                                                  <Role FormalName="Caption"/>
+              <ContentItem>
+                <MediaType FormalName="Text"/>
+                <Format FormalName="bcNITF2.5"/>
+                <DataContent><p>Lajdar Brahimi, mediador internacional para Siria, es recibido por el viceministro de Exteriores sirio Faisal Moqdad (izq), el pasado lunes 28 de octubre a su llegada a Damasco.</p></DataContent>
+              </ContentItem>
+            </NewsComponent>
+                                    <NewsComponent>
+                                          <Role FormalName="HighDef"/>
+                            <ContentItem Href="7d21a88ecf27abcbdef1aea6f7d621aad76ed591.jpg">
+                <MediaType FormalName="Photo"/>
+                                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>47650</SizeInBytes>
+                                    <Property FormalName="Width" Value="768"/>
+                                                      <Property FormalName="Height" Value="533"/>
+                                  </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                        <NewsComponent>
+                                                        <Role FormalName="Quicklook"/>
+                            <ContentItem Href="21efe8f838930ee586922eafbebd1fe18491d3d2.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>7716</SizeInBytes>
+                                    <Property FormalName="Width" Value="245"/>
+                                                      <Property FormalName="Height" Value="170"/>
+                                  </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                <NewsComponent>
+                                          <Role FormalName="Thumbnail"/>
+                            <ContentItem Href="3bd5785d9c765020cabac0fdb598a66e58001120.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>2766</SizeInBytes>
+                                    <Property FormalName="Width" Value="109"/>
+                                                      <Property FormalName="Height" Value="76"/>
+                                  </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                                                          </NewsComponent>
+                                </NewsComponent>
+  </NewsItem>
+</NewsML>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NewsML Version="1.2">
+        <Catalog Href="http://www.afp.com/dtd/AFPCatalog.xml"/>
+  <NewsEnvelope>
+        <DateAndTime>20131029T224324Z</DateAndTime>
+        <Priority FormalName="4"/>
+      </NewsEnvelope>
+  <NewsItem>
+    <Identification>
+      <NewsIdentifier>
+	        	                <ProviderId>afp.com</ProviderId>
+	                <DateId>20131029</DateId>
+                <NewsItemId>5b59e70c-dd58-42e7-a335-29b3d5da28ee</NewsItemId>
+        			        <RevisionId PreviousRevision="0" Update="N">1</RevisionId>
+                <PublicIdentifier>urn:newsml:afp.com:20131029:5b59e70c-dd58-42e7-a335-29b3d5da28ee:1</PublicIdentifier>
+      </NewsIdentifier>
+                              <NameLabel>Siria-política-oposición</NameLabel>
+          </Identification>
+    <NewsManagement>
+      <NewsItemType FormalName="News"/>
+            <FirstCreated>20131029T152538Z</FirstCreated>
+            <ThisRevisionCreated>20131029T152538Z</ThisRevisionCreated>
+                        <Status FormalName="Usable"/>
+                </NewsManagement>
+    <NewsComponent>
+      <NewsLines>
+        	<HeadLine>Destituyen al viceprimer ministro sirio Qadri Jamil</HeadLine>
+                                                  <DateLine>Damasco (AFP)</DateLine>
+                <CopyrightLine>© 2013 AFP</CopyrightLine>
+        <SlugLine>Siria-política-oposición</SlugLine>
+              </NewsLines>
+      <AdministrativeMetadata>
+        <Provider>
+	  <Party FormalName="afp.com" />
+        </Provider>
+                              </AdministrativeMetadata>
+      <DescriptiveMetadata>
+	<Language FormalName="es" />
+                <OfInterestTo FormalName="espanol--edicion-conjunta--mundo"/>
+                                <Location HowPresent="Origin">
+                    <Property FormalName="Country" Value="SYR"/>
+                              <Property FormalName="City" Value="Damasco"/>
+                              <Property FormalName="Latitude" Value="33.5102"/>
+                              <Property FormalName="Longitude" Value="36.29128"/>
+                  </Location>
+                                                                        <SubjectCode>
+                                    <Subject FormalName="11000000"/>
+                                          </SubjectCode>
+                      </DescriptiveMetadata>
+                                                                                                              <NewsComponent>
+        <ContentItem>
+          <MediaType FormalName="Text"/>
+          <Format FormalName="bcNITF2.5"/>
+          <DataContent><media media-type="image" style="leftSide"><media-reference data-location="#photo0" mime-type=""/></media><p>El presidente sirio, Bashar Al Asad, destituyó este martes al viceprimer ministro, Qadri Jamil, un ex-opositor que había entrado en el Gobierno, por ausentarse de su puesto sin autorización y no cumplir con su deber, según un comunicado difundido por la agencia oficial Sana.</p><p>"Un decreto presidencial destituyó a Qadri Jamil por estar ausente de su puesto sin autorización, no cumplir con su deber de viceprimer ministro encargado de los asuntos económicos", indicó el comunicado. </p><p>Además, Jamil llevó "a cabo actividades y reuniones fuera del país sin coordinación con el Gobierno", señaló el comunicado. Hace días trascendió que Jamil se reunió el sábado en Ginebra con el embajador estadounidense, Robert Ford, que tiene a su cargo los asuntos relacionados con Siria.</p></DataContent>
+        </ContentItem>
+      </NewsComponent>
+          
+                                      <NewsComponent Duid="photo0">
+            <NewsLines>
+                            <HeadLine>El viceprimer ministro sirio, Qadri Jamil, en 2012. Jamil, ex-opositor que entró en el Gobierno sirio, ha sido destituido de su cargo por ausentarse de su puesto sin autorización y on cumplir con su deber de primer ministro</HeadLine>
+                            <CreditLine>AFP/Archivos</CreditLine>
+                            <ByLine>Luai Bechara</ByLine>
+                                        </NewsLines>
+            <AdministrativeMetadata>
+              <Provider>
+                                <Party FormalName="afp.com" />
+                              </Provider>
+              <Creator>
+                <Party FormalName="Luai Bechara"/>
+              </Creator>
+                            <Source>
+                <Party FormalName="AFP"/>
+              </Source>
+            </AdministrativeMetadata>
+            <NewsComponent>
+                                                                                                  <Role FormalName="Caption"/>
+              <ContentItem>
+                <MediaType FormalName="Text"/>
+                <Format FormalName="bcNITF2.5"/>
+                <DataContent><p>El viceprimer ministro sirio, Qadri Jamil, en 2012. Jamil, ex-opositor que entró en el Gobierno sirio, ha sido destituido de su cargo por ausentarse de su puesto sin autorización y on cumplir con su deber de primer ministro</p></DataContent>
+              </ContentItem>
+            </NewsComponent>
+                                    <NewsComponent>
+                                          <Role FormalName="HighDef"/>
+                            <ContentItem Href="c58b5ec0927710c62347b162f0cabd8a652ec59f.jpg">
+                <MediaType FormalName="Photo"/>
+                                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>47867</SizeInBytes>
+                                    <Property FormalName="Width" Value="768"/>
+                                                      <Property FormalName="Height" Value="562"/>
+                                  </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                        <NewsComponent>
+                                                        <Role FormalName="Quicklook"/>
+                            <ContentItem Href="4c7934c6d7d4faea4c49af239b837820aff4d13e.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>8947</SizeInBytes>
+                                    <Property FormalName="Width" Value="245"/>
+                                                      <Property FormalName="Height" Value="179"/>
+                                  </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                <NewsComponent>
+                                          <Role FormalName="Thumbnail"/>
+                            <ContentItem Href="b7c355aabe9617ec81c8e3318da12484396b4c1f.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>3007</SizeInBytes>
+                                    <Property FormalName="Width" Value="109"/>
+                                                      <Property FormalName="Height" Value="80"/>
+                                  </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                                                          </NewsComponent>
+                                </NewsComponent>
+  </NewsItem>
+</NewsML>

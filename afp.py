@@ -15,9 +15,11 @@ from defusedxml.minidom import parse
 import jinja2
 import psycopg2
 
+from settings import *
+
 parser = argparse.ArgumentParser()
 parser.add_argument("path", help="directorio de archivos xml")
-parser.add_argument("img_path", help="directorio de imagenes")
+# parser.add_argument("img_path", help="directorio de imagenes")
 args = parser.parse_args()
 
 
@@ -110,11 +112,14 @@ def process_news_item(news_item, file_path):
                         #Nombre de la imagen
                         img_quicklook = news_components_files[3].getAttribute('Href')
                         #Moviendo archivo a carpeta media de laprensa
-                        shutil.copy2(os.path.join(directory, img_quicklook), args.img_path)
+                        # shutil.copy2(os.path.join(directory, img_quicklook), args.img_path)
 
                         if img_quicklook:
-                            template = jinja2.Template('<img width="310" src="http://www.laprensa.com.ni/files/imagen/{{img}}" alt="" />')
-                            render = template.render(img=img_quicklook, img_path=args.img_path)
+                            template = jinja2.Template('<img width="310" src="http://{{S3_BUCKET}}{{S3_KEY_DEST}}{{img}}" alt="" />')
+                            # template = jinja2.Template('<img width="310" src="http://www.laprensa.com.ni/files/imagen/{{img}}" alt="" />')
+                            render = template.render(S3_BUCKET=S3_BUCKET,
+                                    S3_KEY_DEST=S3_KEY_DEST, img=img_quicklook)
+                            # render = template.render(img=img_quicklook, img_path=args.img_path)
                             img_ref_list.append({ 'ref':render, 'foto':foto, 'caption':caption })
 
             for img_properties, img_ref, media  in zip(img_properties_list, img_ref_list, media_list):
@@ -131,6 +136,7 @@ def process_news_item(news_item, file_path):
     return data
 
 def get_edition(date, cursor):
+    print  date
     cursor.execute('''
     select idedicion from edicion
     where edicion = DATE %(fecha)s
@@ -139,6 +145,7 @@ def get_edition(date, cursor):
         'fecha' : date
     })
     edicion = cursor.fetchone()
+    print edicion
     if edicion is not None:
         edicion = edicion[0]
 
@@ -195,7 +202,8 @@ def process_news_data(news_data, rconn, pgconn):
 
 if __name__ == '__main__':
     rconn = redis.Redis()
-    pgconn = psycopg2.connect("dbname=laprensa user=laprensa password=Blade-mobile8Occupy")
+    pgconn = psycopg2.connect(database=DB_DATABASE, user=DB_USER,
+            password=DB_PASSWORD, host=DB_HOST, port=5432)
     file_path_list = get_filelist(args.path, rconn)
 
     print map(

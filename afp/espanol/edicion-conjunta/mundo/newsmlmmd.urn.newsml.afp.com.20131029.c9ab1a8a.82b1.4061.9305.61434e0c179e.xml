@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NewsML Version="1.2">
+        <Catalog Href="http://www.afp.com/dtd/AFPCatalog.xml"/>
+  <NewsEnvelope>
+        <DateAndTime>20131029T224324Z</DateAndTime>
+        <Priority FormalName="4"/>
+      </NewsEnvelope>
+  <NewsItem>
+    <Identification>
+      <NewsIdentifier>
+	        	                <ProviderId>afp.com</ProviderId>
+	                <DateId>20131029</DateId>
+                <NewsItemId>c9ab1a8a-82b1-4061-9305-61434e0c179e</NewsItemId>
+        			        <RevisionId PreviousRevision="1" Update="N">2</RevisionId>
+                <PublicIdentifier>urn:newsml:afp.com:20131029:c9ab1a8a-82b1-4061-9305-61434e0c179e:2</PublicIdentifier>
+      </NewsIdentifier>
+                              <NameLabel>Somalia-atentado-EEUU-conflicto-ejército</NameLabel>
+          </Identification>
+    <NewsManagement>
+      <NewsItemType FormalName="News"/>
+            <FirstCreated>20131029T140731Z</FirstCreated>
+            <ThisRevisionCreated>20131029T140732Z</ThisRevisionCreated>
+                        <Status FormalName="Usable"/>
+                </NewsManagement>
+    <NewsComponent>
+      <NewsLines>
+        	<HeadLine>Un líder yihadista &apos;shebab&apos; murió en Somalia por el ataque de un drone</HeadLine>
+                                                  <DateLine>Mogadiscio (AFP)</DateLine>
+                <CopyrightLine>© 2013 AFP</CopyrightLine>
+        <SlugLine>Somalia-atentado-EEUU-conflicto-ejército</SlugLine>
+              </NewsLines>
+      <AdministrativeMetadata>
+        <Provider>
+	  <Party FormalName="afp.com" />
+        </Provider>
+                              </AdministrativeMetadata>
+      <DescriptiveMetadata>
+	<Language FormalName="es" />
+                <OfInterestTo FormalName="espanol--edicion-conjunta--mundo"/>
+                                <Location HowPresent="Origin">
+                    <Property FormalName="Country" Value="SOM"/>
+                              <Property FormalName="City" Value="Mogadiscio"/>
+                              <Property FormalName="Latitude" Value="2.03711"/>
+                              <Property FormalName="Longitude" Value="45.34375"/>
+                  </Location>
+                                                                        <SubjectCode>
+                                            <SubjectMatter FormalName="16001000"/>
+                                  </SubjectCode>
+                <SubjectCode>
+                                            <SubjectMatter FormalName="16003000"/>
+                                  </SubjectCode>
+                <SubjectCode>
+                                            <SubjectMatter FormalName="16003000"/>
+                                  </SubjectCode>
+                <SubjectCode>
+                                                    <SubjectDetail FormalName="16009002"/>
+                          </SubjectCode>
+                <SubjectCode>
+                                    <Subject FormalName="16000000"/>
+                                          </SubjectCode>
+                <SubjectCode>
+                                            <SubjectMatter FormalName="16002000"/>
+                                  </SubjectCode>
+                      </DescriptiveMetadata>
+                                                                                                              <NewsComponent>
+        <ContentItem>
+          <MediaType FormalName="Text"/>
+          <Format FormalName="bcNITF2.5"/>
+          <DataContent><media media-type="image" style="leftSide"><media-reference data-location="#photo0" mime-type=""/></media><p>Un alto responsable de los 'shebab' somalíes, organizador de los ataques suicidas de estos rebeldes vinculados a Al Qaeda, murió en el ataque de un drone (avión teledirigido) ocurrido el lunes al sur de Somalia, anunció este martes el ministro del Interior somalí.</p><p>Ibrahim Ali Abdi, alias Anta-Anta, "desempeñó un papel importante en la muerte de civiles inocentes y su muerte ayudará a restablecer la paz", declaró Abdikarin Husein Guled a la radio pública.</p><p>El ministro no detalló la autoría del operativo, pero, el lunes, un funcionario de EEUU confirmó desde Washington que un drone norteamericano había atacado ese mismo día a 'shebab' somalíes.</p><p>El Gobierno de Somalia afirma que el individuo era conocido por preparar las chaquetas y los coches bomba empleados habitualmente en los atentados suicidas, cometidos por los rebeldes islamistas en las zonas controladas por el Ejecutivo. De momento, los rebeldes no hicieron ningún comentario. </p><p>Aviones estadounidenses dirigidos por control remoto suelen llevar a cabo ataques contra los islamistas en Somalia. La Casa Blanca reconoció en 2011 la existencia de una base de drones estadounidenses en Etiopía, pero desmintió que estén armados.</p><p>La página especializada Globalsecurity.org afirma que la CIA lanza drones desde Yibuti, país fronterizo de Somalia y situado frente a Yemen, al otro lado del golfo de Adén, para eliminar a los responsables de Al Qaida en la región.</p><p>A finales de octubre, las fuerzas especiales de la Marina estadounidense llevaron a cabo un ataque en el puerto somalí de Barawe, sin lograr capturar al responsable shebab que buscaban, un keniano de origen somalí, Abdulkadir Mohamed Abdulkadir, alias "Ikrima".</p><p>Los 'shebab' fueron desalojados de las principales ciudades de Somalia, entre ellas la capital Mogadiscio y el puerto meridional de Kismayo, por una fuerza de la Unión Africana y tropas etíopes.</p><p>No obstante, el grupo islamista sigue controlando partes del sur del país, y en los últimos meses intensificó su campaña de atentados suicidas.</p><p>Los shebab reivindicaron el ataque de hace unas semanas a un centro comercial en Nairobi, en el que murieron al menos 67 personas y causó unos 20 desaparecidos. Somalia está sumida en el caos desde la caída del presidente Siad Barre, en 1991.</p></DataContent>
+        </ContentItem>
+      </NewsComponent>
+          
+                                      <NewsComponent Duid="photo0">
+            <NewsLines>
+                            <HeadLine>El aparcamiento del centro comercial Westgate de Nairobi, destrozado tras el ataque de un grupo de islamistas &apos;shebab&apos; que dejó al menos 67 muertos, en una imagen divulgada el pasado 26 de septiembre por la presidencia de Kenia.</HeadLine>
+                            <CreditLine>Presidencia de Kenia/AFP/Archivos</CreditLine>
+                            <ByLine>.</ByLine>
+                                          <NewsLine>
+                <NewsLineType FormalName="AdvisoryLine" />
+                <NewsLineText>TO GO WITH AFP STORY BY STEPHANE BARBIER AND AYMERIC VINCENOT -- RESTRICTED TO EDITORIAL USE MANDATORY CREDIT &quot;AFP PHOTO/HO/KENYAN PRESIDENCY&quot; - NO MARKETING NO ADVERTISING CAMPAIGNS - DISTRIBUTED AS A SERVICE TO CLIENTS</NewsLineText>
+              </NewsLine>
+                          </NewsLines>
+            <AdministrativeMetadata>
+              <Provider>
+                                <Party FormalName="afp.com" />
+                              </Provider>
+              <Creator>
+                <Party FormalName="."/>
+              </Creator>
+                            <Source>
+                <Party FormalName="Presidencia de Kenia"/>
+              </Source>
+            </AdministrativeMetadata>
+            <NewsComponent>
+                                                                                                  <Role FormalName="Caption"/>
+              <ContentItem>
+                <MediaType FormalName="Text"/>
+                <Format FormalName="bcNITF2.5"/>
+                <DataContent><p>El aparcamiento del centro comercial Westgate de Nairobi, destrozado tras el ataque de un grupo de islamistas 'shebab' que dejó al menos 67 muertos, en una imagen divulgada el pasado 26 de septiembre por la presidencia de Kenia.</p></DataContent>
+              </ContentItem>
+            </NewsComponent>
+                                    <NewsComponent>
+                                          <Role FormalName="HighDef"/>
+                            <ContentItem Href="a27cda8e4b3893a17da3663d47c2b060b074ceaf.jpg">
+                <MediaType FormalName="Photo"/>
+                                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>102736</SizeInBytes>
+                                    <Property FormalName="Width" Value="768"/>
+                                                      <Property FormalName="Height" Value="509"/>
+                                  </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                        <NewsComponent>
+                                                        <Role FormalName="Quicklook"/>
+                            <ContentItem Href="b2f0ffbfd1e8ed987bf9cc89cc1126a7c71869ea.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>13462</SizeInBytes>
+                                    <Property FormalName="Width" Value="245"/>
+                                                      <Property FormalName="Height" Value="162"/>
+                                  </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                <NewsComponent>
+                                          <Role FormalName="Thumbnail"/>
+                            <ContentItem Href="39be7d7ceaac58730881bd12be0ff413e35beba5.jpg">
+                <MediaType FormalName="Photo"/>
+                                                <Format FormalName="JPG"/>
+                                <Characteristics>
+                  <SizeInBytes>3717</SizeInBytes>
+                                    <Property FormalName="Width" Value="110"/>
+                                                      <Property FormalName="Height" Value="73"/>
+                                  </Characteristics>
+              </ContentItem>
+            </NewsComponent>
+                                                                                                          </NewsComponent>
+                                </NewsComponent>
+  </NewsItem>
+</NewsML>
