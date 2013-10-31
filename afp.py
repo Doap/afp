@@ -39,6 +39,7 @@ def get_filelist(path, rconn):
             with open(index_path, 'r') as index_file:
                 index_dom = parse(index_file)
                 for node in index_dom.getElementsByTagName('NewsItemRef'):
+                    import pdb; pdb.set_trace()
                     yield os.path.join(directory_path, node.getAttribute('NewsItem'))
 
             rconn.hset('afp:file_index', path_hash, file_hash)
