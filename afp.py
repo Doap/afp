@@ -39,7 +39,6 @@ def get_filelist(path, rconn):
             with open(index_path, 'r') as index_file:
                 index_dom = parse(index_file)
                 for node in index_dom.getElementsByTagName('NewsItemRef'):
-                    import pdb; pdb.set_trace()
                     yield os.path.join(directory_path, node.getAttribute('NewsItem'))
 
             rconn.hset('afp:file_index', path_hash, file_hash)
@@ -116,10 +115,11 @@ def process_news_item(news_item, file_path):
                         # shutil.copy2(os.path.join(directory, img_quicklook), args.img_path)
 
                         if img_quicklook:
-                            template = jinja2.Template('<img width="310" src="http://{{S3_BUCKET}}{{S3_KEY_DEST}}{{img}}" alt="" />')
+                            template = jinja2.Template('<img width="310" \
+                                    src="http://{{S3_BUCKET}}{{S3_IMG_DEST}}{{img}}" alt="" />')
                             # template = jinja2.Template('<img width="310" src="http://www.laprensa.com.ni/files/imagen/{{img}}" alt="" />')
                             render = template.render(S3_BUCKET=S3_BUCKET,
-                                    S3_KEY_DEST=S3_KEY_DEST, img=img_quicklook)
+                                    S3_IMG_DEST=S3_IMG_DEST, img=img_quicklook)
                             # render = template.render(img=img_quicklook, img_path=args.img_path)
                             img_ref_list.append({ 'ref':render, 'foto':foto, 'caption':caption })
 
