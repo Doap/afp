@@ -1,5 +1,13 @@
 #!/bin/bash
 #this script use s3cmd
 
-. ./settings.py
-s3cmd --config=$S3_CONFIG_FILE sync $ORIGIN_PATH s3://$S3_BUCKET$S3_KEY_DEST
+SRC_DIR=`dirname $0`
+. $SRC_DIR/settings.py
+
+if [ "$1" != "" ]; then
+    LOCAL_DATA_DIRECTORY=$1
+else
+    LOCAL_DATA_DIRECTORY=$ORIGIN_PATH
+fi
+
+s3cmd --config=$S3_CONFIG_FILE sync $LOCAL_DATA_DIRECTORY s3://$S3_BUCKET$S3_KEY_DEST

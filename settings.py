@@ -1,5 +1,6 @@
 S3_BUCKET="s3.laprensa.com.ni"
-S3_KEY_DEST="/home/juancarlos/laprensa/afp/"
+S3_SYNC_DEST="/home/juancarlos/laprensa/afp/"
+S3_IMG_DEST="/home/juancarlos/laprensa/files/imagen/"
 S3_CONFIG_FILE="/home/alvarezjuan/.s3cfg"
 ORIGIN_PATH="/home/alvarezjuan/www/lp_python_apps/afp-laprensa/afp/"
 
