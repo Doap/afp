@@ -17,11 +17,26 @@ import psycopg2
 
 from settings import *
 
-parser = argparse.ArgumentParser()
-parser.add_argument("path", help="directorio de archivos xml")
-# parser.add_argument("img_path", help="directorio de imagenes")
-args = parser.parse_args()
+#==============================================================================
 
+
+class Command(BaseCommand):
+    help = 'Import News from AFP conntent service'
+
+    def handle(self, sourcepath,  *args, **options):
+        rconn = redis.Redis()
+        file_path_list = get_filelist(args.path, rconn)
+
+        print map(
+        functools.partial(process_news_data, rconn=rconn, pgconn=pgconn),
+        (
+        news for news_list in
+        itertools.imap(functools.partial(process_news_file, rconn=rconn), file_path_list)
+        for news in news_list
+        ))
+
+
+#==============================================================================
 
 def get_file_sha1(filepath):
     with open(filepath, 'r') as f:
