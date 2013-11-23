@@ -15,26 +15,32 @@ from defusedxml.minidom import parse
 import jinja2
 import psycopg2
 
-from settings import *
+from django.conf import settings
+from django.core.management.base import BaseCommand, CommandError
 
 #==============================================================================
 
 
 class Command(BaseCommand):
+    args = '<data_source_path>'
     help = 'Import News from AFP conntent service'
 
     def handle(self, sourcepath,  *args, **options):
         rconn = redis.Redis()
+        pgconn = psycopg2.connect(database=DB_DATABASE, user=DB_USER,
+                password=DB_PASSWORD, host=DB_HOST, port=5432)
         file_path_list = get_filelist(args.path, rconn)
 
         print map(
         functools.partial(process_news_data, rconn=rconn, pgconn=pgconn),
         (
         news for news_list in
-        itertools.imap(functools.partial(process_news_file, rconn=rconn), file_path_list)
+        itertools.imap(functools.partial(process_news_file, rconn=rconn),
+            sourcepath)
         for news in news_list
         ))
 
+        pgconn.commit()
 
 #==============================================================================
 
@@ -216,18 +222,18 @@ def process_news_data(news_data, rconn, pgconn):
 
 
 
-if __name__ == '__main__':
-    rconn = redis.Redis()
-    pgconn = psycopg2.connect(database=DB_DATABASE, user=DB_USER,
-            password=DB_PASSWORD, host=DB_HOST, port=5432)
-    file_path_list = get_filelist(args.path, rconn)
-
-    print map(
-    functools.partial(process_news_data, rconn=rconn, pgconn=pgconn),
-    (
-    news for news_list in
-    itertools.imap(functools.partial(process_news_file, rconn=rconn), file_path_list)
-    for news in news_list
-    ))
-
-    pgconn.commit()
+# if __name__ == '__main__':
+#     rconn = redis.Redis()
+#     pgconn = psycopg2.connect(database=DB_DATABASE, user=DB_USER,
+#             password=DB_PASSWORD, host=DB_HOST, port=5432)
+#     file_path_list = get_filelist(args.path, rconn)
+# 
+#     print map(
+#     functools.partial(process_news_data, rconn=rconn, pgconn=pgconn),
+#     (
+#     news for news_list in
+#     itertools.imap(functools.partial(process_news_file, rconn=rconn), file_path_list)
+#     for news in news_list
+#     ))
+# 
+#     pgconn.commit()

@@ -17,15 +17,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'django_laprensa',
-        'USER': 'juancarlos',
-        'PASSWORD': 'fr1ck0ff',
-        'HOST':'10.0.0.86',
-        'PORT':'5432'
-    },
-    'legacy': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'laprensa',
+        'NAME': 'laprensa-test',
         'USER': 'juancarlos',
         'PASSWORD': 'fr1ck0ff',
         'HOST':'10.0.0.86',
