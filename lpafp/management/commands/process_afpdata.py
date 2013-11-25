@@ -20,26 +20,36 @@ from django.core.management.base import BaseCommand, CommandError
 
 #==============================================================================
 
+# TODO: rename HD Image adding time mark, move to the image directory insert in
+# to the database
+# XXX: In [1]: import time 
+# In [2]: mytime = time.localtime()
+# In [3]: print time.mktime(mytime), int(time.mktime(mytime))
+# 1385421055.0 1385421055
 
 class Command(BaseCommand):
     args = '<data_source_path>'
     help = 'Import News from AFP conntent service'
-
     def handle(self, sourcepath,  *args, **options):
         rconn = redis.Redis()
-        pgconn = psycopg2.connect(database=DB_DATABASE, user=DB_USER,
-                password=DB_PASSWORD, host=DB_HOST, port=5432)
+        database = setting.DATABASES['default']
+        pgconn = psycopg2.connect(
+                database=database['NAME'],
+                user=database['USER'],
+                password=database['PASSWORD'], 
+                host=database['HOST'], 
+                port=database['PORT'])
         file_path_list = get_filelist(args.path, rconn)
-
         print map(
-        functools.partial(process_news_data, rconn=rconn, pgconn=pgconn),
-        (
-        news for news_list in
-        itertools.imap(functools.partial(process_news_file, rconn=rconn),
-            sourcepath)
-        for news in news_list
-        ))
-
+            functools.partial(process_news_data, rconn=rconn, pgconn=pgconn),
+            (
+                news for news_list in
+                itertools.imap(
+                    functools.partial(process_news_file, rconn=rconn),
+                    sourcepath
+                ) for news in news_list
+            )
+        )
         pgconn.commit()
 
 #==============================================================================

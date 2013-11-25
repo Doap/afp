@@ -125,7 +125,6 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
-    'lpcore',
     'lpafp',
     'compressor',
     'storages',
