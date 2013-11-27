@@ -8,6 +8,7 @@ import shutil
 import functools
 import itertools
 import hashlib
+import time
 
 import futures
 import redis
@@ -27,16 +28,18 @@ from django.core.management.base import BaseCommand, CommandError
 # In [3]: print time.mktime(mytime), int(time.mktime(mytime))
 # 1385421055.0 1385421055
 
+
 class Command(BaseCommand):
-    args = '<data_source_path>'
+    args = '<data_source_path> <destiny_image_path>'
     help = 'Import News from AFP conntent service'
-    def handle(self, sourcepath,  *args, **options):
+
+    def handle(self, source_path, img_path, *args, **options):
         rconn = redis.Redis()
         database = setting.DATABASES['default']
         pgconn = psycopg2.connect(
                 database=database['NAME'],
                 user=database['USER'],
-                password=database['PASSWORD'], 
+                password=database['PASSWORD'],
                 host=database['HOST'], 
                 port=database['PORT'])
         file_path_list = get_filelist(args.path, rconn)
@@ -141,18 +144,32 @@ def process_news_item(news_item, file_path):
                     #Solamente imagenes medianas
                     if news_components_files[1].getAttribute('FormalName') == 'HighDef':
                         #Nombre de la imagen
-                        img_quicklook = news_components_files[3].getAttribute('Href')
+                        # marca de tiempo 
+                        timemark = timelocaltime()
+                        img_quicklook = int(time.mktime(timemark)) + "_" + news_components_files[3].getAttribute('Href')
                         #Moviendo archivo a carpeta media de laprensa
-                        # shutil.copy2(os.path.join(directory, img_quicklook), args.img_path)
+                        shutil.copy2(os.path.join(directory, img_quicklook), args.img_path)
+
+                        # Insertando en imagen en la BD
+                        cursor.execute('''
+                            INSERT INTO imagen(
+                            imagen, credito)
+                            VALUES (%(imagen)s, %(credito)s);
+                           RETURNING idimagen
+                           ''', {
+                            'imagen': img_quicklook,
+                            'credito': "AFP"
+                        })
+                        image_id = cursor.fetchone()[0]
+
 
                         if img_quicklook:
-                            template = jinja2.Template('<img width="310" \
-                                    src="http://{{S3_BUCKET}}{{S3_IMG_DEST}}{{img}}" alt="" />')
-                            # template = jinja2.Template('<img width="310" src="http://www.laprensa.com.ni/files/imagen/{{img}}" alt="" />')
-                            render = template.render(S3_BUCKET=S3_BUCKET,
-                                    S3_IMG_DEST=S3_IMG_DEST, img=img_quicklook)
-                            # render = template.render(img=img_quicklook, img_path=args.img_path)
-                            img_ref_list.append({ 'ref':render, 'foto':foto, 'caption':caption })
+                            template = jinja2.Template(settings.PIXURL +
+                                    time.strftime("/%Y/%m/", timemark) +
+                                    '/288x318_{{img}}" alt="" />')
+                            render = template.render(img=img_quicklook, img_path=args.img_path)
+                            img_ref_list.append({ 'ref':render, 'foto':foto,
+                                'caption':caption, 'idimagen':image_id })
 
             for img_properties, img_ref, media  in zip(img_properties_list, img_ref_list, media_list):
                 left = jinja2.Template('<div style="text-align:center;" class="na-media na-image-left">{{ img }}<div class="info">{{ caption }}</div></div>')

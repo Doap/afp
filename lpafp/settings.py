@@ -200,6 +200,8 @@ EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'boletin@laprensa.com.ni'
 # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
+PIXURL = 'http://du89eogdt5czf.cloudfront.net/wp-content/uploads/sites/55'
+
 
 try:
     from local_settings import *
