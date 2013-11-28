@@ -42,13 +42,13 @@ class Command(BaseCommand):
                 password=database['PASSWORD'],
                 host=database['HOST'], 
                 port=database['PORT'])
-        file_path_list = get_filelist(args.path, rconn)
+        file_path_list = get_filelist(source_path, rconn)
         print map(
             functools.partial(process_news_data, rconn=rconn, pgconn=pgconn),
             (
                 news for news_list in
                 itertools.imap(
-                    functools.partial(process_news_file, rconn=rconn),
+                    functools.partial(process_news_file, img_path, rconn=rconn),
                     sourcepath
                 ) for news in news_list
             )
@@ -77,19 +77,20 @@ def get_filelist(path, rconn):
 
             rconn.hset('afp:file_index', path_hash, file_hash)
 
-def process_news_file(file_path, rconn):
+def process_news_file(file_path, img_path, rconn):
     if not rconn.hsetnx('news:lock', file_path, True):
         return ()
 
     with open(file_path, 'r') as file_object:
         dom = parse(file_object)
 
-    result = itertools.imap(functools.partial(process_news_item, file_path=file_path), dom.getElementsByTagName('NewsItem'))
+    result = itertools.imap(functools.partial(process_news_item,
+        file_path=file_path, img_path), dom.getElementsByTagName('NewsItem'))
     rconn.hdel('news:lock', file_path)
 
     return result
 
-def process_news_item(news_item, file_path):
+def process_news_item(news_item, file_path, img_path):
     directory = os.path.dirname(file_path)
     data = {}
     img_properties_list, img_ref_list = [], []
@@ -148,7 +149,7 @@ def process_news_item(news_item, file_path):
                         timemark = timelocaltime()
                         img_quicklook = int(time.mktime(timemark)) + "_" + news_components_files[3].getAttribute('Href')
                         #Moviendo archivo a carpeta media de laprensa
-                        shutil.copy2(os.path.join(directory, img_quicklook), args.img_path)
+                        shutil.copy2(os.path.join(directory, img_quicklook), img_path)
 
                         # Insertando en imagen en la BD
                         cursor.execute('''
@@ -167,7 +168,7 @@ def process_news_item(news_item, file_path):
                             template = jinja2.Template(settings.PIXURL +
                                     time.strftime("/%Y/%m/", timemark) +
                                     '/288x318_{{img}}" alt="" />')
-                            render = template.render(img=img_quicklook, img_path=args.img_path)
+                            render = template.render(img=img_quicklook, img_path=img_path)
                             img_ref_list.append({ 'ref':render, 'foto':foto,
                                 'caption':caption, 'idimagen':image_id })
 
